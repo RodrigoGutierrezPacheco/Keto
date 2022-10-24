@@ -27,9 +27,7 @@ export default function Footer() {
 
   return (
   <ThemeProvider theme={theme}>
-    <Box sx={{ width:'100%', alignItems:'center'}}>
-		 <BottomNavigationAction label="Messenger" icon={<MessageIcon />} />
-    </Box>
+    <p>Footer</p>
 		</ThemeProvider>
   );
 }
