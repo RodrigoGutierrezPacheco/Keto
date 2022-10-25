@@ -6,6 +6,7 @@ import { height } from '@mui/system';
 import { green, purple } from '@mui/material/colors';
 import { createTheme } from '@mui/material/styles';
 import { ThemeProvider } from 'styled-components';
+import './Footer.css'
 
 const theme = createTheme({
   palette: {
@@ -22,8 +23,8 @@ export default function Footer() {
   const [value, setValue] = React.useState(0);
 
   return (
-  <ThemeProvider theme={theme}>
-    <p>Footer</p>
-		</ThemeProvider>
+  <div className='footer'>
+  <p>footer</p>
+  </div>
   );
 }

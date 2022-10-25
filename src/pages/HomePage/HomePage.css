@@ -1,4 +1,4 @@
-@media (max-width:320px){
+@media (max-width:426px){
 	.dieta{
 		width: 99%;
 		height: 13.5rem;
@@ -15,33 +15,44 @@
 
 	.containerOne{
 		width: 50%;
-		background-color: aqua;
-		/* border: 2px solid black; */
+		padding: .5rem;
+		border: 2px solid black;
 	}
 
 .comida{
-	width: 90%;
+	width: 99%;
 	border-radius: .5rem;
 }
 
 .tienda{
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: center;
+	justify-content:space-around;
 }
 
 .tiendaOne{
-	width: 45%;
-	border: 1px solid black;
+	width: 99%;
+	padding: .5rem;
+	border: 2px solid black;
+}
+
+.tiendat{
+	display: flex;
 }
 
 .testimonios{
-	margin-left: 10%;
+	width: 99%;
+}
+
+.testi{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .testimonio{
 	border: 1px solid black;
-	width: 90%;
+	width: 99%;
 	display: flex;
 	flex-direction: column;
 	border-left: 10%;
@@ -50,6 +61,12 @@
 
 .dietaKeto{
 	background-color:#DF1F4D;
+	width: 99%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-left: .5%;
 }
 
 .buttonKeto{
@@ -58,14 +75,14 @@
 	border-radius:1rem ;
 	height: 2rem;
 	width: 40%;
+	margin-bottom: 1rem;
 }
 
 .articulo{
 	border: 2px solid black;
-	width: 95%;
+	width: 99%;
 	display: flex;
 	flex-direction: column;
-	margin-left: 2.5%;
 	margin-top: 1rem;
 	border-radius: .2rem;
 }
@@ -76,86 +93,18 @@
 	width: 40%;
 	height: 15%;
 	margin-top: .5rem;
-}
-}
-
-@media (min-width:321px) and (max-width:426px){
-	.dieta{
-		width: 99%;
-		height: 13.5rem;
-	}
-
-	.menu{
-		width: 20%;
-	}
-
-	.queIncluye{
-		display: flex;
-		flex-wrap: wrap;
-	}
-
-	.containerOne{
-		width: 50%;
-		background-color: aqua;
-		/* border: 2px solid black; */
-	}
-
-.comida{
-	width: 90%;
 	border-radius: .5rem;
 }
 
-.tienda{
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
+.one{
+	margin-bottom: 1rem;
 }
 
-.tiendaOne{
-	width: 45%;
-	border: 1px solid black;
+.articuloOne{
+ display: flex;
+ flex-direction: column;
+ justify-items: center;
+ align-items: center;
 }
 
-.testimonios{
-	margin-left: 10%;
-}
-
-.testimonio{
-	border: 1px solid black;
-	width: 90%;
-	display: flex;
-	flex-direction: column;
-	border-left: 10%;
-	margin-bottom: 10%;
-}
-
-.dietaKeto{
-	background-color:#DF1F4D;
-}
-
-.buttonKeto{
-	color: white;
-	background-color: green;
-	border-radius:1rem ;
-	height: 2rem;
-	width: 40%;
-}
-
-.articulo{
-	border: 2px solid black;
-	width: 95%;
-	display: flex;
-	flex-direction: column;
-	margin-left: 2.5%;
-	margin-top: 1rem;
-	border-radius: .2rem;
-}
-
-.buttonArticulos{
-	background-color: blue;
-	color: white;
-	width: 40%;
-	height: 15%;
-	margin-top: .5rem;
-}
 }

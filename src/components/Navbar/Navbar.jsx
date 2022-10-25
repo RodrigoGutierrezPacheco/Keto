@@ -12,7 +12,19 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
+import { createTheme } from '@mui/material';
+import { blue,green } from '@mui/material/colors';
 
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: '#8ed3ff',
+    },
+    secondary: {
+      main: green[500],
+    },
+  },
+});
 const pages = ['Nuestros Retos', 'Consulta', 'Clases','Recetarios','Nosotros','Blog',];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
@@ -36,7 +48,7 @@ function NavBar() {
   };
 
   return (
-    <AppBar position="static">
+    <AppBar position="static" theme={theme}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
