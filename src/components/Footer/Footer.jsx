@@ -24,7 +24,12 @@ export default function Footer() {
 
   return (
   <div className='footer'>
-  <p>footer</p>
+  <div className='reds'>
+		<img className='redes' src="images/fb.png" alt="" />
+		<img className='redes' src="images/instagram.png" alt="" />
+		<img className='redes' src="images/messenger.png" alt="" />
+		<img className='redes' src="images/whatsapp.png" alt="" />
+	</div>
   </div>
   );
 }

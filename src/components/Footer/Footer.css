@@ -25,5 +25,18 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
-	background-color: aqua;
+	background-color:#8ed3ff;
+}
+
+.redes{
+	width: 8%;
+	margin-top: 1%;
+	margin-left: 1%;
+	margin-right: 1%;
+}
+
+.reds{
+	display: flex;
+	flex-direction: row;
+  justify-content: space-between;
 }

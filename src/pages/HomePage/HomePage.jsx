@@ -5,6 +5,8 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
+import Box from '@mui/material/Box';
+import Button from '@mui/material/Button';
 
 function HomePage() {
   return (
@@ -182,7 +184,14 @@ function HomePage() {
 				<h2>¿Qué es la dieta cetogenica/keto?</h2>
 				<p>*Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores fuga quaerat sapiente commodi quam! Voluptatem eaque enim veritatis quas optio nihil sed, iusto laborum odio voluptas corrupti quod commodi praesentium!</p>
 				<p>*Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores fuga quaerat sapiente commodi quam! Voluptatem eaque enim veritatis quas optio nihil sed, iusto laborum odio voluptas corrupti quod commodi praesentium!</p>
-				<button className="buttonKeto">Entra al Reto!</button>
+				<img src="images/dieta2.png" alt="" />
+				<Box sx={{ '& button': { m: 2 } }}>
+      <div> 
+        <Button color="success" variant="contained" size="medium" className='button'>
+          Entra al Reto!
+        </Button>
+      </div>
+    </Box>
 			</div>
 			<div className="articuloOne">
 			<article className="articulo">
@@ -203,9 +212,15 @@ function HomePage() {
 				<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae, excepturi asperiores? Ullam atque blanditiis ut sit minima necessitatibus eaque deserunt quis! Repellat dolorem cupiditate voluptate est quas, mollitia quo ex?</p>
 				<a href="">Leer más--></a>
 			</article>
-			<button className="buttonArticulos">Mas Articulos!</button>
+			<Box sx={{ '& button': { m: 2 } }}>
+      <div> 
+        <Button variant="outlined" size="medium" className='button'>
+          Leer Mas Articulos
+        </Button>
+      </div>
+    </Box>
 			</div>
-			<h1>KetoChallenge</h1>
+			<img className="ketoImg" src="images/ketochallenge.png" alt="" />
     </div>
   );
 }

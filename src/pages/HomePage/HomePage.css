@@ -1,7 +1,7 @@
 @media (max-width:426px){
 	.dieta{
 		width: 99%;
-		height: 13.5rem;
+		height: 18rem;
 	}
 
 	.menu{
@@ -105,6 +105,10 @@
  flex-direction: column;
  justify-items: center;
  align-items: center;
+}
+
+.ketoImg{
+	width: 99%;
 }
 
 }
