@@ -11,6 +11,7 @@ import IsPrivate from "./components/IsPrivate/IsPrivate";
 import IsAnon from "./components/IsAnon/IsAnon";
 import Footer from "./components/Footer/Footer";
 import Retos from "./pages/Retos/Retos";
+import DetalleReto from "./pages/DetalleReto/DetalleReto";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
 				<Route path="/retos" element={<Retos/>}/>
+				<Route path="/retos/titulo" element={<DetalleReto/>}/>
 
         <Route
           path="/profile"

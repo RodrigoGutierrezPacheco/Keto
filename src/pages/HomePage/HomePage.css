@@ -111,4 +111,20 @@
 	width: 99%;
 }
 
+.dieta1{
+	width: 99%;
+}
+
+.retos{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin-top: 1rem;
+}
+
+.reto{
+	margin-bottom:1.5rem;
+}
+
+
 }

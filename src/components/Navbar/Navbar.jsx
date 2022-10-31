@@ -103,7 +103,7 @@ function NavBar() {
             >
               {
 				      <MenuItem onClick={handleCloseNavMenu} className="retos">
-								<div className='retos'>
+								<div className='menu'>
 								<Typography display='flex' component='a'sx={{textDecoration:'none'}} href="/retos" textAlign="center">Nuestros Retos</Typography>
 								<Typography display='flex' component='a'sx={{textDecoration:'none'}} href="/contacto" textAlign="center">Contacto</Typography>
 								<Typography display='flex' component='a'sx={{textDecoration:'none'}} href="/recetario" textAlign="center">Recetario</Typography>
