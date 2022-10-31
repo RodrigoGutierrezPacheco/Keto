@@ -10,6 +10,7 @@ import Navbar from "./components/Navbar/Navbar";
 import IsPrivate from "./components/IsPrivate/IsPrivate";
 import IsAnon from "./components/IsAnon/IsAnon";
 import Footer from "./components/Footer/Footer";
+import Retos from "./pages/Retos/Retos";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
 
       <Routes>
         <Route path="/" element={<HomePage />} />
+				<Route path="/retos" element={<Retos/>}/>
 
         <Route
           path="/profile"

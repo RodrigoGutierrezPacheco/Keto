@@ -1,0 +1,9 @@
+.retos{
+	display: flex;
+	flex-direction: column;
+}
+
+.menu{
+	text-decoration: none;
+	background-color: aquamarine;
+}

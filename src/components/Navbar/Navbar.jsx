@@ -12,8 +12,10 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
+import Retos from '../../pages/Retos/Retos';
 import { createTheme } from '@mui/material';
 import { blue,green } from '@mui/material/colors';
+import Link from '@mui/material';
 
 const theme = createTheme({
   palette: {
@@ -99,11 +101,17 @@ function NavBar() {
                 display: { xs: 'block', md: 'none' },
               }}
             >
-              {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
-                </MenuItem>
-              ))}
+              {
+				      <MenuItem onClick={handleCloseNavMenu} className="retos">
+								<div className='retos'>
+								<Typography display='flex' component='a'sx={{textDecoration:'none'}} href="/retos" textAlign="center">Nuestros Retos</Typography>
+								<Typography display='flex' component='a'sx={{textDecoration:'none'}} href="/contacto" textAlign="center">Contacto</Typography>
+								<Typography display='flex' component='a'sx={{textDecoration:'none'}} href="/recetario" textAlign="center">Recetario</Typography>
+								<Typography display='flex' component='a'sx={{textDecoration:'none'}} href="/rutinas" textAlign="center">Rutinas</Typography>
+								<Typography display='flex' component='a'sx={{textDecoration:'none'}} href="/unete" textAlign="center">Unete</Typography>
+								</div>
+							</MenuItem>
+							}
             </Menu>
           </Box>
           {/* <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} /> */}
@@ -111,7 +119,7 @@ function NavBar() {
             variant="h5"
             noWrap
             component="a"
-            href=""
+            href="/"
             sx={{
               mr: 2,
               display: { xs: 'flex', md: 'none' },
@@ -138,12 +146,12 @@ function NavBar() {
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
-            <Tooltip title="Open settings">
+            {/* <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
                 <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
               </IconButton>
-            </Tooltip>
-            <Menu
+            </Tooltip> */}
+            {/* <Menu
               sx={{ mt: '45px' }}
               id="menu-appbar"
               anchorEl={anchorElUser}
@@ -164,7 +172,7 @@ function NavBar() {
                   <Typography textAlign="center">{setting}</Typography>
                 </MenuItem>
               ))}
-            </Menu>
+            </Menu> */}
           </Box>
         </Toolbar>
       </Container>
