@@ -89,8 +89,8 @@ const Retos =()=> {
 								<Typography variant="h6" color="CaptionText">
 									{item.precio}
 								</Typography>
-								<Button href={`/retos/${item.titulo}`}>Ver Mas</Button>
-{/* <Modal
+								<Button onClick={handleOpen}>Ver Mas</Button>
+<Modal
   open={open}
   onClose={handleClose}
   aria-labelledby="modal-modal-title"
@@ -105,7 +105,7 @@ const Retos =()=> {
 {item.precio}
     </Typography>
   </Box>
-</Modal> */}
+</Modal>
 							</CardContent>
 						</CardActionArea>
 					</Card>
