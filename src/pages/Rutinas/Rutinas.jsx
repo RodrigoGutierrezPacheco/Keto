@@ -9,47 +9,47 @@ import Button from '@mui/material/Button';
 import Modal from '@mui/material/Modal';
 import { useState } from 'react';
 
-const reto=[
+const rutinas=[
 	{
 		img:'images/dieta.jpg',
-		titulo:'Reto Keto',
+		titulo:'Cardio',
 		precio: '$75',
 		info:'El mejor de todos1',
 	},
 	{
 		img:'images/dieta1.jpg',
-		titulo:'Reto Keto',
+		titulo:'Mancuernas',
 		precio: '$750',
 		info:'El mejor de todos1',
 	},
 	{
 		img:'images/dieta1.jpg',
-		titulo:'Reto Keto',
+		titulo:'Ligas Resistencia',
 		precio: '$750',
 		info:'El mejor de todos1',
 	},
 	{
 		img:'images/dieta1.jpg',
-		titulo:'Reto Keto',
+		titulo:'Implementos',
 		precio: '$750',
 		info:'El mejor de todos1',
 	},
 	{
 		img:'images/dieta1.jpg',
-		titulo:'RetoKeto2',
+		titulo:'Aerobico',
 		precio: '$750',
 		info:'El mejor de todos1',
 	},
 	{
 		img:'images/dieta1.jpg',
-		titulo:'Reto Keto',
+		titulo:'Resistencia',
 		precio: '$750',
 		info:'El mejor de todos',
 		link:'retoKeto'
 	},
 ]
 
-const Retos =()=> {
+const Rutinas =()=> {
 	const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
@@ -68,9 +68,9 @@ const Retos =()=> {
 
   return (
 		<div>
-			<h1>Retos</h1>
+			<h1>Rutinas</h1>
 			<div className='retos'>
-			{reto.map((item)=>(
+			{rutinas.map((item)=>(
 				    <Card className='reto' key={item.img}  sx={{maxWidth: "45%"}}>
 						<CardActionArea>
 							<CardMedia
@@ -116,4 +116,4 @@ const Retos =()=> {
   );
 }
 
-export default Retos;
+export default Rutinas;

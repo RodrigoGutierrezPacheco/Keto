@@ -25,10 +25,10 @@ export default function Footer() {
   return (
   <div className='footer'>
   <div className='reds'>
-		<img className='redes' src="images/fb.png" alt="" />
-		<img className='redes' src="images/instagram.png" alt="" />
-		<img className='redes' src="images/messenger.png" alt="" />
-		<img className='redes' src="images/whatsapp.png" alt="" />
+		<a href="https://facebook.com"><img className='redes' src="images/fb.png" alt="" /></a>
+		<a href="https://instagram.com"><img  className='redes' src="images/instagram.png" alt="" /></a>
+		<a href="https://messenger.com"><img  className='redes' src="images/messenger.png" alt="" /></a>
+		<a href="https://whatsapp.com"><img  className='redes' src="images/whatsapp.png" alt="" /></a>
 	</div>
   </div>
   );

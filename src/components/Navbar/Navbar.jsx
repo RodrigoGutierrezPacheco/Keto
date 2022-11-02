@@ -104,10 +104,10 @@ function NavBar() {
               {
 				      <MenuItem onClick={handleCloseNavMenu} className="retos">
 								<div className='menu'>
-								<Typography display='flex' component='a'sx={{textDecoration:'none'}} href="/retos" textAlign="center">Nuestros Retos</Typography>
-								<Typography display='flex' component='a'sx={{textDecoration:'none'}} href="/contacto" textAlign="center">Contacto</Typography>
-								<Typography display='flex' component='a'sx={{textDecoration:'none'}} href="/recetario" textAlign="center">Recetario</Typography>
-								<Typography display='flex' component='a'sx={{textDecoration:'none'}} href="/rutinas" textAlign="center">Rutinas</Typography>
+								<Typography marginBottom='1rem' display='flex' component='a'sx={{textDecoration:'none'}} href="/retos" textAlign="center">Nuestros Retos</Typography>
+								<Typography marginBottom='1rem' display='flex' component='a'sx={{textDecoration:'none'}} href="/contacto" textAlign="center">Contacto</Typography>
+								<Typography marginBottom='1rem' display='flex' component='a'sx={{textDecoration:'none'}} href="/recetas" textAlign="center">Recetas</Typography>
+								<Typography marginBottom='1rem' display='flex' component='a'sx={{textDecoration:'none'}} href="/rutinas" textAlign="center">Rutinas</Typography>
 								<Typography display='flex' component='a'sx={{textDecoration:'none'}} href="/unete" textAlign="center">Unete</Typography>
 								</div>
 							</MenuItem>

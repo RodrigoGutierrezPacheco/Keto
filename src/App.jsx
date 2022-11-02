@@ -12,6 +12,8 @@ import IsAnon from "./components/IsAnon/IsAnon";
 import Footer from "./components/Footer/Footer";
 import Retos from "./pages/Retos/Retos";
 import DetalleReto from "./pages/DetalleReto/DetalleReto";
+import Recetas from "./pages/Recetas/Recetas";
+import Rutinas from "./pages/Rutinas/Rutinas";
 
 function App() {
   return (
@@ -22,6 +24,8 @@ function App() {
         <Route path="/" element={<HomePage />} />
 				<Route path="/retos" element={<Retos/>}/>
 				<Route path="/retos/titulo" element={<DetalleReto/>}/>
+				<Route path="/recetas" element={<Recetas/>} />
+				<Route path="/rutinas" element={<Rutinas/>}/>
 
         <Route
           path="/profile"
