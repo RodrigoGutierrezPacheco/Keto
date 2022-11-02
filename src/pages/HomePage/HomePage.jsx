@@ -59,12 +59,13 @@ function HomePage() {
 				<h2>Tienda en Linea</h2>
 			<article className="tienda">
 				<Card sx={{ maxWidth: '45%',height:'20rem' }} className="one">
-      <CardActionArea>
+      <CardActionArea href="/retos">
         <CardMedia
           component="img"
           height="140"
           image="images/comida.jpg"
           alt="green iguana"
+					
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
@@ -77,7 +78,7 @@ function HomePage() {
       </CardActionArea>
     </Card>
 		<Card sx={{ maxWidth: '45%',height:'20rem' }} className="one">
-      <CardActionArea>
+      <CardActionArea href="/retos">
         <CardMedia
           component="img"
           height="140"
@@ -113,7 +114,7 @@ function HomePage() {
       </CardActionArea>
     </Card>
 		<Card sx={{ maxWidth: '45%',height:'20rem' }} className="one">
-      <CardActionArea>
+      <CardActionArea href='/recetas'>
         <CardMedia
           component="img"
           height="140"
@@ -149,7 +150,7 @@ function HomePage() {
       </CardActionArea>
     </Card>
 		<Card sx={{ maxWidth: '45%',height:'20rem' }} className="one">
-      <CardActionArea>
+      <CardActionArea href="/rutinas">
         <CardMedia
           component="img"
           height="140"
@@ -187,7 +188,7 @@ function HomePage() {
 				<img src="images/dieta2.png" alt="" />
 				<Box sx={{ '& button': { m: 2 } }}>
       <div> 
-        <Button color="success" variant="contained" size="medium" className='button'>
+        <Button href="/retos" color="success" variant="contained" size="medium" className='button'>
           Entra al Reto!
         </Button>
       </div>
@@ -214,7 +215,7 @@ function HomePage() {
 			</article>
 			<Box sx={{ '& button': { m: 2 } }}>
       <div> 
-        <Button variant="outlined" size="medium" className='button'>
+        <Button href="/articulos" variant="outlined" size="medium" className='button'>
           Leer Mas Articulos
         </Button>
       </div>

@@ -14,6 +14,7 @@ import Retos from "./pages/Retos/Retos";
 import DetalleReto from "./pages/DetalleReto/DetalleReto";
 import Recetas from "./pages/Recetas/Recetas";
 import Rutinas from "./pages/Rutinas/Rutinas";
+import Articulos from "./pages/Articulos/Articulos";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
 				<Route path="/retos/titulo" element={<DetalleReto/>}/>
 				<Route path="/recetas" element={<Recetas/>} />
 				<Route path="/rutinas" element={<Rutinas/>}/>
+				<Route path="/articulos" element={<Articulos/>}/>
 
         <Route
           path="/profile"
