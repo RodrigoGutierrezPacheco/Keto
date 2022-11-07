@@ -3,6 +3,7 @@ import "./Pago.css"
 import FormGroup from '@mui/material/FormGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Checkbox from '@mui/material/Checkbox';
+import { Button, Radio } from '@mui/material';
 
 const Pago = () => {
 	const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
@@ -10,7 +11,7 @@ const Pago = () => {
 		<div>
 			<h1>Reto Keto Challenge</h1>
 			<div className='formularioPago'>
-				<h2>Reto</h2>
+				<h2>Pago</h2>
 				<form action="">
 					<h3 className='form'>Ingresa tu Nombre</h3>
 					<input className='estatura' type="text" placeholder='Nombre' />
@@ -25,14 +26,28 @@ const Pago = () => {
 						<option value="1.71-1.80">1.71m-1.80m</option>
 						<option value="1.81-1.90">1.81m-1.90m</option>
 					</select>
-				</form>
+					<h3 className='form'>Peso</h3>
+					<input className='estatura' type="text" placeholder='Peso en Kg' />
 				<FormGroup>
 					<h3 className='form'>¿Es tu primer reto?</h3>
-      <FormControlLabel control={<Checkbox/>} label="1er Reto" />
-			<FormControlLabel control={<Checkbox/>} label="2do Reto" />
-			<FormControlLabel control={<Checkbox/>} label="3er Reto" />
-			<FormControlLabel control={<Checkbox/>} label="4to Reto" />
+      <FormControlLabel value="numeroReto" name='numeroReto' control={<Checkbox/>} label="1er Reto" />
+			<FormControlLabel value="numeroReto" name='numeroReto' control={<Checkbox/>} label="2do Reto" />
+			<FormControlLabel value="numeroReto" name='numeroReto' control={<Checkbox/>} label="3er Reto" />
+			<FormControlLabel value="numeroReto" name='numeroReto' control={<Checkbox/>} label="4to Reto" />
     </FormGroup>
+		<h3 className='form'>¿Que reto deseas?</h3>
+					<select className='estatura' name="estatura" id="estatura">
+						<option value="">Reto</option>
+						<option value="1.50-1.70">Reto 1</option>
+						<option value="1.71-1.80">Reto 2</option>
+						<option value="1.81-1.90">Reto 3</option>
+					</select>
+					<h3 className='form'>¿Tienes alguna enfermedad cronica?</h3>
+					<input className='estatura' type="text" placeholder='Si(Cual)/No' />
+					<h3 className='form'>¿Tomas algun medicamento?</h3>
+					<input className='estatura' type="text" placeholder='Si(Cual)/No' />
+				</form>
+				<Button>Proceder al Pago</Button>
 			</div>
 		</div>
 	)
