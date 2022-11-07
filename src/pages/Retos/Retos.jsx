@@ -72,7 +72,7 @@ const Retos =()=> {
 			<div className='retos'>
 			{reto.map((item)=>(
 				    <Card className='reto' key={item.img}  sx={{maxWidth: "45%"}}>
-						<CardActionArea>
+						<CardActionArea href='/pago'>
 							<CardMedia
 								component="img"
 								height="140"
