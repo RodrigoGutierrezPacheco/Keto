@@ -12,40 +12,45 @@ import { useState } from 'react';
 const reto=[
 	{
 		img:'images/dieta.jpg',
-		titulo:'Reto Keto',
+		titulo:'Reto Keto 1',
 		precio: '$75',
 		info:'El mejor de todos1',
+		link:'retoKeto1'
 	},
 	{
 		img:'images/dieta1.jpg',
-		titulo:'Reto Keto',
+		titulo:'Reto Keto 2',
 		precio: '$750',
 		info:'El mejor de todos1',
+		link:'retoKeto2'
 	},
 	{
 		img:'images/dieta1.jpg',
-		titulo:'Reto Keto',
+		titulo:'Reto Keto 3',
 		precio: '$750',
 		info:'El mejor de todos1',
+		link:'retoKeto3'
 	},
 	{
 		img:'images/dieta1.jpg',
-		titulo:'Reto Keto',
+		titulo:'Reto Keto 4',
 		precio: '$750',
 		info:'El mejor de todos1',
+		link:'retoKeto4'
 	},
 	{
 		img:'images/dieta1.jpg',
-		titulo:'RetoKeto2',
+		titulo:'RetoKeto 5',
 		precio: '$750',
 		info:'El mejor de todos1',
+		link:'retoKeto5'
 	},
 	{
 		img:'images/dieta1.jpg',
-		titulo:'Reto Keto',
+		titulo:'Reto Keto 6',
 		precio: '$750',
 		info:'El mejor de todos',
-		link:'retoKeto'
+		link:'retoKeto6'
 	},
 ]
 
@@ -72,13 +77,8 @@ const Retos =()=> {
 			<div className='retos'>
 			{reto.map((item)=>(
 				    <Card className='reto' key={item.img}  sx={{maxWidth: "45%"}}>
-						<CardActionArea href='/pago'>
-							<CardMedia
-								component="img"
-								height="140"
-								image="images/dieta.jpg"
-								alt="green iguana"
-							/>
+						<CardActionArea /*href='/pago'*/>
+							<CardMedia component="img" height="140" image="images/dieta.jpg" alt="green iguana" />
 							<CardContent>
 								<Typography gutterBottom variant="h5" component="div">
 									{item.titulo}
@@ -89,23 +89,7 @@ const Retos =()=> {
 								<Typography variant="h6" color="CaptionText">
 									{item.precio}
 								</Typography>
-								<Button onClick={handleOpen}>Ver Mas</Button>
-<Modal
-  open={open}
-  onClose={handleClose}
-  aria-labelledby="modal-modal-title"
-  aria-describedby="modal-modal-description"
->
-  <Box sx={style}>
-    <Typography id="modal-modal-title" variant="h6" component="h2">
-      Informacion del Reto
-    </Typography>
-    <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-{item.info}
-{item.precio}
-    </Typography>
-  </Box>
-</Modal>
+								<Button onClick={handleOpen} href={item.link}>Ver Mas</Button>
 							</CardContent>
 						</CardActionArea>
 					</Card>
