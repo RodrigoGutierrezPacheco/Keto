@@ -77,7 +77,7 @@ const Retos =()=> {
 			<div className='retos'>
 			{reto.map((item)=>(
 				    <Card className='reto' key={item.img}  sx={{maxWidth: "45%"}}>
-						<CardActionArea /*href='/pago'*/>
+						<CardActionArea href={item.link}>
 							<CardMedia component="img" height="140" image="images/dieta.jpg" alt="green iguana" />
 							<CardContent>
 								<Typography gutterBottom variant="h5" component="div">

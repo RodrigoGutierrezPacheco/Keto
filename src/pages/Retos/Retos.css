@@ -1,0 +1,57 @@
+.retoketo1{
+	width: 100%;
+	height: 5rem;
+	color:rgb(255, 255, 255);
+	background-color: rgb(119, 169, 255);
+}
+
+.retoketo11{
+	margin-top: 0%;
+	margin-bottom: 3rem;
+}
+
+.retoketo111{
+	margin-top: 0%;
+	background-color: rgb(255, 255, 255);
+	width: 100%;
+	color:rgb(119, 169, 255) ;
+	text-align:justify;
+	padding: 1rem;
+}
+
+.incluye{
+	margin-top: 14rem;
+}
+
+.puntos{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	margin-left: .5rem;
+}
+
+.imagenReto{
+	background-color:rgb(119, 169, 255)  ;
+	width: 100%;
+	height:12rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.table{
+width: 90%;
+margin-left: 2.5%;
+}
+
+.recetarios{
+	width: 99%;
+	display: flex;
+	flex-wrap:wrap;
+}
+
+.imagenRecetario{
+	width: 45%;
+	margin: .2rem;
+	margin-left: 3.3%;
+}
