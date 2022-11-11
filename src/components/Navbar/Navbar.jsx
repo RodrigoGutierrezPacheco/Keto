@@ -16,7 +16,6 @@ import Retos from '../../pages/Retos/Retos';
 import { createTheme } from '@mui/material';
 import { blue,green } from '@mui/material/colors';
 import Link from '@mui/material';
-
 const theme = createTheme({
   palette: {
     primary: {
@@ -69,7 +68,7 @@ function NavBar() {
               textDecoration: 'none',
             }}
           >
-            KetoChallenge
+            Keto Challenge
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -102,13 +101,13 @@ function NavBar() {
               }}
             >
               {
-				      <MenuItem onClick={handleCloseNavMenu} className="retos">
+				      <MenuItem onClick={handleCloseNavMenu} color='black' className="retos">
 								<div className='menu'>
-								<Typography marginBottom='1rem' display='flex' component='a'sx={{textDecoration:'none'}} href="/retos" textAlign="center">Nuestros Retos</Typography>
-								<Typography marginBottom='1rem' display='flex' component='a'sx={{textDecoration:'none'}} href="/contacto" textAlign="center">Contacto</Typography>
-								<Typography marginBottom='1rem' display='flex' component='a'sx={{textDecoration:'none'}} href="/recetas" textAlign="center">Recetas</Typography>
-								<Typography marginBottom='1rem' display='flex' component='a'sx={{textDecoration:'none'}} href="/rutinas" textAlign="center">Rutinas</Typography>
-								<Typography display='flex' component='a'sx={{textDecoration:'none'}} href="/unete" textAlign="center">Unete</Typography>
+								<Typography color='black' fontWeight='600' marginBottom='1rem' display='flex' component='a'sx={{textDecoration:'none'}} href="/retos" textAlign="center">Nuestros Retos</Typography>
+								<Typography color='black' fontWeight='600' marginBottom='1rem' display='flex' component='a'sx={{textDecoration:'none'}} href="/contacto" textAlign="center">Contacto</Typography>
+								<Typography color='black' fontWeight='600' marginBottom='1rem' display='flex' component='a'sx={{textDecoration:'none'}} href="/recetas" textAlign="center">Recetas</Typography>
+								<Typography color='black' fontWeight='600' marginBottom='1rem' display='flex' component='a'sx={{textDecoration:'none'}} href="/rutinas" textAlign="center">Rutinas</Typography>
+								<Typography color='black' fontWeight='600' display='flex' component='a'sx={{textDecoration:'none'}} href="/unete" textAlign="center">Unete</Typography>
 								</div>
 							</MenuItem>
 							}
@@ -126,19 +125,21 @@ function NavBar() {
               flexGrow: 1,
               fontFamily: 'monospace',
               fontWeight: 700,
-              letterSpacing: '.3rem',
-              color: 'inherit',
+              letterSpacing: '0rem',
+              color: 'black',
               textDecoration: 'none',
+							alignItems:'center',
+							paddingRight:'1rem'
             }}
           >
-            Keto
+            Keto Challenge
           </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, color:'black' }}>
             {pages.map((page) => (
               <Button
                 key={page}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block' }}
+                sx={{ my: 2, color: 'black', display: 'block' }}
               >
                 {page}
               </Button>
