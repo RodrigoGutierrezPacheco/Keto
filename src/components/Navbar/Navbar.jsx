@@ -16,6 +16,7 @@ import Retos from '../../pages/Retos/Retos';
 import { createTheme } from '@mui/material';
 import { blue,green } from '@mui/material/colors';
 import Link from '@mui/material';
+import { width } from '@mui/system';
 const theme = createTheme({
   palette: {
     primary: {
@@ -129,10 +130,13 @@ function NavBar() {
               color: 'black',
               textDecoration: 'none',
 							alignItems:'center',
-							paddingRight:'1rem'
+							paddingRight:'1rem',
+							fontSize:'2rem',
+							color:'#9cff3f',
+							width:'99%'
             }}
           >
-						<img src="images/ketoChallenge.png" alt="" />
+						<img style={{width:320,marginLeft:10}} className='img' src="images/ketoChallenge.png" alt="" />
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, color:'black' }}>
             {pages.map((page) => (
