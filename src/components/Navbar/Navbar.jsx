@@ -132,7 +132,7 @@ function NavBar() {
 							paddingRight:'1rem'
             }}
           >
-            Keto Challenge
+						<img src="images/ketoChallenge.png" alt="" />
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, color:'black' }}>
             {pages.map((page) => (

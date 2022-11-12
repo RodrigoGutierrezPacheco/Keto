@@ -58,7 +58,7 @@ function HomePage() {
 			</section>
 				<h2>Tienda en Linea</h2>
 			<article className="tienda">
-				<Card sx={{ maxWidth: '45%',height:'20rem' }} className="one">
+				<Card sx={{ maxWidth: '49%',height:'20rem' }} className="one">
       <CardActionArea href="/retos">
         <CardMedia
           component="img"
@@ -77,7 +77,7 @@ function HomePage() {
         </CardContent>
       </CardActionArea>
     </Card>
-		<Card sx={{ maxWidth: '45%',height:'20rem' }} className="one">
+		<Card sx={{ maxWidth: '49%',height:'20rem' }} className="one">
       <CardActionArea href="/retos">
         <CardMedia
           component="img"
@@ -95,7 +95,7 @@ function HomePage() {
         </CardContent>
       </CardActionArea>
     </Card>
-		<Card sx={{ maxWidth: '45%',height:'20rem' }} className="one">
+		{/* <Card sx={{ maxWidth: '49%',height:'20rem' }} className="one">
       <CardActionArea>
         <CardMedia
           component="img"
@@ -112,8 +112,8 @@ function HomePage() {
           </Typography>
         </CardContent>
       </CardActionArea>
-    </Card>
-		<Card sx={{ maxWidth: '45%',height:'20rem' }} className="one">
+    </Card> */}
+		<Card sx={{ maxWidth: '49%',height:'20rem' }} className="one">
       <CardActionArea href='/recetas'>
         <CardMedia
           component="img"
@@ -131,7 +131,7 @@ function HomePage() {
         </CardContent>
       </CardActionArea>
     </Card>
-		<Card sx={{ maxWidth: '45%',height:'20rem' }} className="one">
+		<Card sx={{ maxWidth: '49%',height:'20rem' }} className="one">
       <CardActionArea>
         <CardMedia
           component="img"
@@ -149,7 +149,7 @@ function HomePage() {
         </CardContent>
       </CardActionArea>
     </Card>
-		<Card sx={{ maxWidth: '45%',height:'20rem' }} className="one">
+		{/* <Card sx={{ maxWidth: '49%',height:'20rem' }} className="one">
       <CardActionArea href="/rutinas">
         <CardMedia
           component="img"
@@ -166,7 +166,7 @@ function HomePage() {
           </Typography>
         </CardContent>
       </CardActionArea>
-    </Card>
+    </Card> */}
 			</article>
 			<div className="testi">
 				<h2>Testimonios</h2>
@@ -199,7 +199,7 @@ function HomePage() {
 				<img src="images/articulo.jpg" alt="" />
 				<h3>Beneficios de la dieta Keto</h3>
 				<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae, excepturi asperiores? Ullam atque blanditiis ut sit minima necessitatibus eaque deserunt quis! Repellat dolorem cupiditate voluptate est quas, mollitia quo ex?</p>
-				<a href="">Leer más--></a>
+				<a href="/beneficios">Leer más--></a>
 			</article>
 			<article className="articulo">
 				<img src="images/articulo.jpg" alt="" />
@@ -215,7 +215,7 @@ function HomePage() {
 			</article>
 			<Box sx={{ '& button': { m: 2 } }}>
       <div> 
-        <Button href="/articulos" variant="outlined" size="medium" className='button'>
+        <Button href="/articulos" variant="contained" className='buttonLeer' color="info">
           Leer Mas Articulos
         </Button>
       </div>

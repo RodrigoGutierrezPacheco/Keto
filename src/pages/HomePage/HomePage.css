@@ -16,7 +16,7 @@
 	.containerOne{
 		width: 50%;
 		padding: .5rem;
-		border: 2px solid black;
+		/* border: 2px solid black; */
 	}
 
 .comida{
@@ -79,12 +79,16 @@
 }
 
 .articulo{
-	border: 2px solid black;
+	border: .3rem solid black;
+	padding:1rem;
 	width: 99%;
+	height: 30rem;
 	display: flex;
 	flex-direction: column;
+	text-align: left;
 	margin-top: 1rem;
 	border-radius: .2rem;
+	margin-bottom: 1rem;
 }
 
 .buttonArticulos{
@@ -119,11 +123,16 @@
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
-	margin-top: 1rem;
+	margin-top: 2rem;
 }
 
 .reto{
-	margin-bottom:1.5rem;
+	margin-bottom:2rem;
+}
+
+.buttonLeer{
+	margin-top: 1rem;
+	width: 22rem;
 }
 
 
