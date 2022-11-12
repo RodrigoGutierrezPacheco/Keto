@@ -130,13 +130,12 @@ function NavBar() {
               color: 'black',
               textDecoration: 'none',
 							marginLeft:'1.2rem',
-							fontSize:'2rem',
 							color:'#15d652',
 							width:'99%'
             }}
           >
 						{/* <img style={{width:320,marginLeft:10}} className='img' src="images/ketoChallenge.png" alt="" /> */}
-            Keto Challenge🍏
+            <p className='titulo'>Keto Challenge🍏</p>
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, color:'black' }}>
             {pages.map((page) => (

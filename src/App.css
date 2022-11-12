@@ -1,3 +1,31 @@
 .App {
   text-align: center;
 }
+
+@media(max-width:320px){
+	.titulo{
+		height: 1rem;
+		display: flex;
+		align-items: center;
+		padding-right: 1rem;
+	}
+}
+
+@media(min-width:321px) and (max-width:425px){
+	.titulo{
+		height: .5rem;
+		display: flex;
+		align-items: center;
+		margin-left: 1rem;
+	}
+}
+
+@media(min-width:425px) and (max-width:768px){
+	.titulo{
+		height: .5rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-left: 2rem;
+	}
+}
