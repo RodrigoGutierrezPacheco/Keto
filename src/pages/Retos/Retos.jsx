@@ -72,7 +72,7 @@ const Retos =()=> {
 };
 
   return (
-		<div>
+		<div className='body'>
 			<h1>Retos</h1>
 			<div className='retos'>
 			{reto.map((item)=>(

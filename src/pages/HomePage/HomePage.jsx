@@ -10,7 +10,7 @@ import Button from '@mui/material/Button';
 
 function HomePage() {
   return (
-    <div>
+    <div className="body">
 			<div>
 			<img className="dieta" src="images/comida.jpg" alt="" />
       <img className="dieta" src="images/dieta1.jpg" alt="" />

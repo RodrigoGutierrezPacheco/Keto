@@ -1,4 +1,9 @@
 @media (max-width:1441px){
+
+	.body{
+		margin-top: 4rem;
+	}
+
 	.dieta{
 		width: 99%;
 		height: 18rem;

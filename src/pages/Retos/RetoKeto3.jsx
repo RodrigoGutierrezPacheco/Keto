@@ -2,7 +2,7 @@ import React from 'react'
 
 const RetoKeto3 = () => {
 	return (
-<div>
+<div className='body'>
 			<div className='retoketo1'>
 				<h2 className='retoketo11'>¿Qué es el RetoKeto3?</h2>
 				<p className='retoketo111'>En el Reto Keto 3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, nam cumque, praesentium repudiandae alias minus odit hic nulla repellendus, dignissimos quaerat a ipsum commodi ratione officia culpa doloribus unde quo. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum quaerat odio vel eligendi asperiores distinctio sequi excepturi totam hic, esse nihil libero consequuntur, nemo qui tempore alias, quisquam dolorum consequatur!</p>

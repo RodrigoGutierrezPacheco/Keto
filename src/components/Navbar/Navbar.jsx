@@ -50,7 +50,7 @@ function NavBar() {
   };
 
   return (
-    <AppBar position="static" theme={theme}>
+    <AppBar position="fixed" theme={theme}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
@@ -129,14 +129,14 @@ function NavBar() {
               letterSpacing: '0rem',
               color: 'black',
               textDecoration: 'none',
-							alignItems:'center',
-							paddingRight:'1rem',
+							marginLeft:'1.2rem',
 							fontSize:'2rem',
-							color:'#9cff3f',
+							color:'#15d652',
 							width:'99%'
             }}
           >
-						<img style={{width:320,marginLeft:10}} className='img' src="images/ketoChallenge.png" alt="" />
+						{/* <img style={{width:320,marginLeft:10}} className='img' src="images/ketoChallenge.png" alt="" /> */}
+            Keto Challenge🍏
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, color:'black' }}>
             {pages.map((page) => (
