@@ -135,7 +135,10 @@ function NavBar() {
             }}
           >
 						{/* <img style={{width:320,marginLeft:10}} className='img' src="images/ketoChallenge.png" alt="" /> */}
-            <p className='titulo'>Keto Challenge🍏</p>
+            <div className='ketoNav'>
+							<p className=''>Keto Challenge</p>
+							<img className='keto' src="images/keto.png" alt="" />
+						</div>
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, color:'black' }}>
             {pages.map((page) => (

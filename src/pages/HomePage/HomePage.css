@@ -65,7 +65,8 @@
 }
 
 .dietaKeto{
-	background-color:#DF1F4D;
+	background-color:#64c9ff;
+	border-radius: .5rem;
 	width: 99%;
 	display: flex;
 	flex-direction: column;
@@ -138,6 +139,11 @@
 .buttonLeer{
 	margin-top: 1rem;
 	width: 22rem;
+}
+
+.button{
+	margin-top: 1rem;
+	margin-bottom: 1rem;
 }
 
 

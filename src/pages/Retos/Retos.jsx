@@ -13,43 +13,43 @@ const reto=[
 	{
 		img:'images/dieta.jpg',
 		titulo:'Reto Keto 1',
-		precio: '$75',
-		info:'El mejor de todos1',
+		precio: '$800',
+		info:'Enfocado para personas que nunca han estado en dieta cetogenica',
 		link:'retoKeto1'
 	},
 	{
 		img:'images/dieta1.jpg',
 		titulo:'Reto Keto 2',
-		precio: '$750',
-		info:'El mejor de todos1',
+		precio: '$800',
+		info:'Reto pensado para llegar a tu objetivo mas rapido',
 		link:'retoKeto2'
 	},
 	{
 		img:'images/dieta1.jpg',
 		titulo:'Reto Keto 3',
-		precio: '$750',
-		info:'El mejor de todos1',
+		precio: '$800',
+		info:'Podras llegar a tus resultados sin necesidad de restringir muchos alimentos',
 		link:'retoKeto3'
 	},
 	{
 		img:'images/dieta1.jpg',
 		titulo:'Reto Keto 4',
-		precio: '$750',
-		info:'El mejor de todos1',
+		precio: '$800',
+		info:'Enfocado para las personas que asistan continuamente al gimnasio',
 		link:'retoKeto4'
 	},
 	{
 		img:'images/dieta1.jpg',
-		titulo:'RetoKeto 5',
-		precio: '$750',
-		info:'El mejor de todos1',
+		titulo:'Reto Keto 5',
+		precio: '$800',
+		info:'Optimo para las personas con nivel de vida sedentario',
 		link:'retoKeto5'
 	},
 	{
 		img:'images/dieta1.jpg',
 		titulo:'Reto Keto 6',
-		precio: '$750',
-		info:'El mejor de todos',
+		precio: '$800',
+		info:'Si tienes mas de 60 años, este reto está pensado para ti',
 		link:'retoKeto6'
 	},
 ]

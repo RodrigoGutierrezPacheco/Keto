@@ -24,35 +24,35 @@ function HomePage() {
 				<div className="queIncluye">
 					<div className="containerOne">
 						<img className="menu" src="images/menu.png" alt="" />
-						<p>Guia de Alimentacion</p>
+						<p>Guia de Alimentacion keto / Cetogenica.</p>
 					</div>
 					<div className="containerOne">
 						<img className="menu" src="images/jugos.png" alt="" />
-						<p>Recetas keto y jugos verders para complementar tu reto</p>
+						<p>Recetas keto y jugos verdes para complementar tu reto.</p>
 					</div >
 					<div className="containerOne">
 						<img className="menu" src="images/lista.png" alt="" />
-						<p>Lista de alimentos de intercampo keto</p>
+						<p>Lista de alimentos de intercambio KETO.</p>
 					</div>
 					<div className="containerOne">
 						<img className="menu" src="images/guis.png" alt="" />
-						<p>Guia para salir de cetosis correctamente al final del reto</p>
+						<p>Guia para salir de cetosis correctamente al final del reto.</p>
 					</div>
 					<div className="containerOne">
 						<img className="menu" src="images/correcto.png" alt="" />
-						<p>Guia de suplementacion correcta en cetosis</p>
+						<p>Guia de suplementacion correcta en cetosis.</p>
 					</div>
 					<div className="containerOne">
 						<img className="menu" src="images/nutricion.png" alt="" />
-						<p>2 Semanas de inversion y nutricion optima para tu cuerpo</p>
+						<p>2 Semanas de inversion y nutricion optima para tu cuerpo.</p>
 					</div>
 					<div className="containerOne">
 						<img className="menu" src="images/menu1.png" alt="" />
-						<p>Menú "Keto to Go" faciles y keto en casa para tu reto</p>
+						<p>Menú "Keto to Go" faciles y keto en casa para tu reto.</p>
 					</div>
 					<div className="containerOne">
 						<img className="menu" src="images/recomendado.png" alt="" />
-						<p>Marcas recomendadas</p>
+						<p>Marcas recomendadas.</p>
 					</div>
 				</div>
 			</section>
@@ -187,8 +187,8 @@ function HomePage() {
 				<p>*Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores fuga quaerat sapiente commodi quam! Voluptatem eaque enim veritatis quas optio nihil sed, iusto laborum odio voluptas corrupti quod commodi praesentium!</p>
 				<img src="images/dieta2.png" alt="" />
 				<Box sx={{ '& button': { m: 2 } }}>
-      <div> 
-        <Button href="/retos" color="success" variant="contained" size="medium" className='button'>
+      <div className="button"> 
+        <Button href="/retos" color="success" variant="contained" size="medium">
           Entra al Reto!
         </Button>
       </div>
