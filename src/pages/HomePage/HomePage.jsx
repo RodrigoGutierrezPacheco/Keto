@@ -78,7 +78,7 @@ function HomePage() {
       </CardActionArea>
     </Card>
 		<Card sx={{ maxWidth: '49%',height:'20rem' }} className="one">
-      <CardActionArea href="/retos">
+      <CardActionArea href="/retos-balanceado">
         <CardMedia
           component="img"
           height="140"

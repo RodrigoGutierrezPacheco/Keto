@@ -21,6 +21,7 @@ import DetalleReto from "./pages/DetalleReto/DetalleReto";
 import Recetas from "./pages/Recetas/Recetas";
 import Rutinas from "./pages/Rutinas/Rutinas";
 import Articulos from "./pages/Articulos/Articulos";
+import Balanceado from "./pages/Balanceado/Balanceado";
 import Pago from "./pages/Pago/Pago";
 
 function App() {
@@ -41,6 +42,7 @@ function App() {
 				<Route path="/recetas" element={<Recetas/>} />
 				<Route path="/rutinas" element={<Rutinas/>}/>
 				<Route path="/articulos" element={<Articulos/>}/>
+				<Route path="/retos-balanceado" element={<Balanceado/>}/>
 				<Route path="/pago" element={<Pago/>}/>
 
         <Route

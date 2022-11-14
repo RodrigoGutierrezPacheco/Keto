@@ -146,5 +146,20 @@
 	margin-bottom: 1rem;
 }
 
+.retoBalanceado{
+	width: 99%;
+}
+
+.lista{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.preguntas{
+	display: flex;
+	flex-direction: column;
+}
+
 
 }
