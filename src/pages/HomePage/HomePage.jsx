@@ -221,7 +221,7 @@ function HomePage() {
       </div>
     </Box>
 			</div>
-			<img className="ketoImg" src="images/ketochallenge.png" alt="" />
+			<img className="ketoImg" src="images/ketoChallenge1.png" alt="" />
     </div>
   );
 }

@@ -130,7 +130,7 @@ function NavBar() {
               color: 'black',
               textDecoration: 'none',
 							marginLeft:'1.2rem',
-							color:'#15d652',
+							color:'#00c416',
 							width:'99%'
             }}
           >
