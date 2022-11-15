@@ -1,7 +1,7 @@
 @media (max-width:1441px){
 
 	.body{
-		margin-top: 5.5rem;
+		margin-top: 3.8rem;
 	}
 
 	.dieta{
@@ -159,6 +159,12 @@
 .preguntas{
 	display: flex;
 	flex-direction: column;
+}
+
+.negro{
+	color: black;
+	font-weight: 700;
+	background-color:rgba(255,255,255, .9);
 }
 
 }

@@ -1,50 +1,166 @@
 import React from 'react'
+import Button from '@mui/material/Button';
+import Menu from '@mui/material/Menu';
+import MenuItem from '@mui/material/MenuItem';
+import Accordion from 'react-bootstrap/Accordion';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const RetoKeto4 = () => {
+	const [anchorEl, setAnchorEl] = React.useState(null);
+  const open = Boolean(anchorEl);
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
 	return (
-<div className='body'>
-			<div className='retoketo1'>
-				<h2 className='retoketo11'>¿Qué es el RetoKeto4?</h2>
-				<p className='retoketo111'>En el Reto Keto 4 Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, nam cumque, praesentium repudiandae alias minus odit hic nulla repellendus, dignissimos quaerat a ipsum commodi ratione officia culpa doloribus unde quo. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum quaerat odio vel eligendi asperiores distinctio sequi excepturi totam hic, esse nihil libero consequuntur, nemo qui tempore alias, quisquam dolorum consequatur!</p>
-			</div>
-			<div>
-				<h2 className='retoKetoTitulo incluye'>¿Qué incluye el RetoKeto1?</h2>
-				<p>10 semanas de seguimiento con dietas diseñadas para tus propositos</p>
-				<div className='puntos'>
-				<p>✔️Cosa 1</p>
-				<p>✔️Cosa 2</p>
-				<p>✔️Cosa 3</p>
-				<p>✔️Cosa 4</p>
-				<p>✔️Cosa 5</p>
-				<p>✔️Cosa 6</p>
-				<p>✔️Cosa 7</p>
-				<p>✔️Cosa 8</p>
-				<p>✔️Cosa 9</p>
-				<p>✔️Cosa 10</p>
+		<div className="body">
+			<h1>Reto Keto 4</h1>
+			<img className="retoBalanceado" src="images/retoBalanceado.png" alt="" />
+			<p>¡¡Aprovecha nuestro descuento de 50%!!</p>
+			<h4>¿QUÉ ES EL RETO KETO 4?</h4>
+			<p>*El reto balanceado es Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur, esse. Excepturi cupiditate corporis quasi, odio labore nostrum nemo doloribus iure provident quibusdam aspernatur. Quo, dignissimos! Inventore, nostrum! Necessitatibus, sint asperiores.
+			</p>
+			<p>El reto Balanceado incluye seguimiento si es que quieres realizar ayuno intermitente</p>
+			<section>
+				<h2>¿Qué incluye?</h2>
+				<div className="queIncluye">
+					<div className="containerOne">
+						<img className="menu" src="images/menu.png" alt="" />
+						<p>Guia de Alimentacion keto / Cetogenica.</p>
+					</div>
+					<div className="containerOne">
+						<img className="menu" src="images/jugos.png" alt="" />
+						<p>Recetas keto y jugos verdes para complementar tu reto.</p>
+					</div >
+					<div className="containerOne">
+						<img className="menu" src="images/lista.png" alt="" />
+						<p>Lista de alimentos de intercambio KETO.</p>
+					</div>
+					<div className="containerOne">
+						<img className="menu" src="images/guis.png" alt="" />
+						<p>Guia para salir de cetosis correctamente al final del reto.</p>
+					</div>
+					<div className="containerOne">
+						<img className="menu" src="images/correcto.png" alt="" />
+						<p>Guia de suplementacion correcta en cetosis.</p>
+					</div>
+					<div className="containerOne">
+						<img className="menu" src="images/nutricion.png" alt="" />
+						<p>2 Semanas de inversion y nutricion optima para tu cuerpo.</p>
+					</div>
+					<div className="containerOne">
+						<img className="menu" src="images/menu1.png" alt="" />
+						<p>Menú "Keto to Go" faciles y keto en casa para tu reto.</p>
+					</div>
+					<div className="containerOne">
+						<img className="menu" src="images/recomendado.png" alt="" />
+						<p>Marcas recomendadas.</p>
+					</div>
 				</div>
-				<p className='imagenReto'>*Aqui va imagen de referencia para la planificacion semanal del reto*</p>
-			</div>
-			<div>
-				<h2>¿Qué incluyen todos nuestros Retos?</h2>
-				<table className='table'>
-					<tr><th>Incluye</th><th>Reto 1</th><th>Reto 2</th><th>Reto3</th></tr>
-					<tr><th>Recetario</th><th>✔️</th><th>❌</th><th>❌</th></tr>
-					<tr><th>Postres</th><th>✔️</th><th>❌</th><th>❌</th></tr>
-					<tr><th>Dulces</th><th>✔️</th><th>❌</th><th>❌</th></tr>
-					<tr><th>Seguimiento</th><th>✔️</th><th>✔️</th><th>✔️</th></tr>
-				</table>
-			</div>
-			<div>
-				<h2>En la compra de este reto Recibe #n de Recetarios con un valor n totalmente Gratis!</h2>
-				<div className='recetarios'>
-					<img className='imagenRecetario' src="images/comida.jpg" alt="" />
-					<img className='imagenRecetario' src="images/comida.jpg" alt="" />
-					<img className='imagenRecetario' src="images/comida.jpg" alt="" />
-					<img className='imagenRecetario' src="images/comida.jpg" alt="" />
-					<img className='imagenRecetario' src="images/comida.jpg" alt="" />
-					<img className='imagenRecetario' src="images/comida.jpg" alt="" />
-				</div>
-			</div>
+			</section>
+			<h3>Beneficios</h3>
+			<ul className="lista">
+				<li>Beneficio 1</li>
+				<li>Beneficio 2</li>
+				<li>Beneficio 3</li>
+				<li>Beneficio 4</li>
+				<li>Beneficio 5</li>
+				<li>Beneficio 6</li>
+				<li>Beneficio 7</li>
+				<li>Beneficio 8</li>
+				<li>Beneficio 9</li>
+				<li>Beneficio 10</li>
+			</ul>
+			<h3>Preguntas Frecuentes</h3>
+			<div className="preguntas">
+			<Accordion>
+      <Accordion.Item eventKey="1" className='preguntas1' style={{backgroundColor: '#a3d8ff', color:'white'}}>
+        <Accordion.Header>¿Puedo comer dulces?</Accordion.Header>
+        <Accordion.Body>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </Accordion.Body>
+      </Accordion.Item >
+			<Accordion/>
+			<Accordion>
+      <Accordion.Item eventKey="1" style={{backgroundColor: '#a3d8ff', color:'white'}}>
+        <Accordion.Header>¿Puedo Tomar?</Accordion.Header>
+        <Accordion.Body>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </Accordion.Body>
+      </Accordion.Item>
+			</Accordion>
+			<Accordion>
+      <Accordion.Item eventKey="1" style={{backgroundColor: '#a3d8ff', color:'white'}}>
+        <Accordion.Header>¿Debo dejar de comer?</Accordion.Header>
+        <Accordion.Body>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </Accordion.Body>
+      </Accordion.Item>
+			</Accordion>
+			<Accordion>
+      <Accordion.Item eventKey="1" style={{backgroundColor: '#a3d8ff', color:'white'}}>
+        <Accordion.Header>Siento que me falta mas comida</Accordion.Header>
+        <Accordion.Body>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </Accordion.Body>
+      </Accordion.Item>
+			</Accordion>
+			<Accordion>
+      <Accordion.Item eventKey="1" style={{backgroundColor: '#a3d8ff', color:'white'}}>
+        <Accordion.Header>Los alimentos no me gustan</Accordion.Header>
+        <Accordion.Body>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </Accordion.Body>
+      </Accordion.Item>
+			</Accordion>
+			<Accordion>
+      <Accordion.Item eventKey="1" style={{backgroundColor: '#a3d8ff', color:'white'}}>
+        <Accordion.Header>Me siento mas debil</Accordion.Header>
+        <Accordion.Body>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </Accordion.Body>
+      </Accordion.Item>
+    </Accordion>
+		</Accordion>
+    </div>
 		</div>
 	)
 }

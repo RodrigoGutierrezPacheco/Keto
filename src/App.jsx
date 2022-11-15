@@ -21,7 +21,7 @@ import DetalleReto from "./pages/DetalleReto/DetalleReto";
 import Recetas from "./pages/Recetas/Recetas";
 import Rutinas from "./pages/Rutinas/Rutinas";
 import Articulos from "./pages/Articulos/Articulos";
-import Balanceado from "./pages/Balanceado/Balanceado";
+import Balanceado from "./pages/Retos/Balanceado";
 import Pago from "./pages/Pago/Pago";
 
 function App() {

@@ -17,34 +17,34 @@ function HomePage() {
       <Carousel.Item interval={5000}>
         <img
           className="d-block w-100"
-          src="images/articulo.jpg"
+          src="images/Dieta1.png"
           alt="First slide"
         />
         <Carousel.Caption>
-          <h3>Reto 1</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <h3 className="negro">Reto 1</h3>
+          <p className="negro">Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item interval={5000}>
         <img
           className="d-block w-100"
-          src="images/comida.jpg"
+          src="images/Dieta3.png"
           alt="Second slide"
         />
         <Carousel.Caption>
-          <h3>Reto 2</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <h3 className="negro">Reto 2</h3>
+          <p className="negro">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item  interval={5000}>
         <img
           className="d-block w-100"
-          src="images/dieta.jpg"
+          src="images/Dieta4.png"
           alt="Third slide"
         />
         <Carousel.Caption>
-          <h3>Reto 3</h3>
-          <p>
+          <h3 className="negro">Reto 3</h3>
+          <p className="negro">
             Praesent commodo cursus magna, vel scelerisque nisl consectetur.
           </p>
         </Carousel.Caption>
