@@ -62,22 +62,21 @@ const Balanceado = () => {
 			</section>
 			<h3>Beneficios</h3>
 			<ul className="lista">
-				<li>Beneficio</li>
-				<li>Beneficio</li>
-				<li>Beneficio</li>
-				<li>Beneficio</li>
-				<li>Beneficio</li>
-				<li>Beneficio</li>
-				<li>Beneficio</li>
-				<li>Beneficio</li>
-				<li>Beneficio</li>
-				<li>Beneficio</li>
-				<li>Beneficio</li>
+				<li>Beneficio 1</li>
+				<li>Beneficio 2</li>
+				<li>Beneficio 3</li>
+				<li>Beneficio 4</li>
+				<li>Beneficio 5</li>
+				<li>Beneficio 6</li>
+				<li>Beneficio 7</li>
+				<li>Beneficio 8</li>
+				<li>Beneficio 9</li>
+				<li>Beneficio 10</li>
 			</ul>
 			<h3>Preguntas Frecuentes</h3>
 			<div className="preguntas">
-			<Accordion defaultActiveKey="0">
-      <Accordion.Item eventKey="1">
+			<Accordion>
+      <Accordion.Item eventKey="1" className='preguntas1' style={{backgroundColor: '#a3d8ff', color:'white'}}>
         <Accordion.Header>¿Puedo comer dulces?</Accordion.Header>
         <Accordion.Body>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -88,8 +87,10 @@ const Balanceado = () => {
           pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
           culpa qui officia deserunt mollit anim id est laborum.
         </Accordion.Body>
-      </Accordion.Item>
-      <Accordion.Item eventKey="1">
+      </Accordion.Item >
+			<Accordion/>
+			<Accordion>
+      <Accordion.Item eventKey="1" style={{backgroundColor: '#a3d8ff', color:'white'}}>
         <Accordion.Header>¿Puedo Tomar?</Accordion.Header>
         <Accordion.Body>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -101,9 +102,9 @@ const Balanceado = () => {
           culpa qui officia deserunt mollit anim id est laborum.
         </Accordion.Body>
       </Accordion.Item>
-    </Accordion>
-		<Accordion defaultActiveKey="0">
-      <Accordion.Item eventKey="1">
+			</Accordion>
+			<Accordion>
+      <Accordion.Item eventKey="1" style={{backgroundColor: '#a3d8ff', color:'white'}}>
         <Accordion.Header>¿Debo dejar de comer?</Accordion.Header>
         <Accordion.Body>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -115,7 +116,9 @@ const Balanceado = () => {
           culpa qui officia deserunt mollit anim id est laborum.
         </Accordion.Body>
       </Accordion.Item>
-      <Accordion.Item eventKey="1">
+			</Accordion>
+			<Accordion>
+      <Accordion.Item eventKey="1" style={{backgroundColor: '#a3d8ff', color:'white'}}>
         <Accordion.Header>Siento que me falta mas comida</Accordion.Header>
         <Accordion.Body>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -127,9 +130,9 @@ const Balanceado = () => {
           culpa qui officia deserunt mollit anim id est laborum.
         </Accordion.Body>
       </Accordion.Item>
-    </Accordion>
-		<Accordion defaultActiveKey="0">
-      <Accordion.Item eventKey="1">
+			</Accordion>
+			<Accordion>
+      <Accordion.Item eventKey="1" style={{backgroundColor: '#a3d8ff', color:'white'}}>
         <Accordion.Header>Los alimentos no me gustan</Accordion.Header>
         <Accordion.Body>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -141,7 +144,9 @@ const Balanceado = () => {
           culpa qui officia deserunt mollit anim id est laborum.
         </Accordion.Body>
       </Accordion.Item>
-      <Accordion.Item eventKey="1">
+			</Accordion>
+			<Accordion>
+      <Accordion.Item eventKey="1" style={{backgroundColor: '#a3d8ff', color:'white'}}>
         <Accordion.Header>Me siento mas debil</Accordion.Header>
         <Accordion.Body>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -154,6 +159,7 @@ const Balanceado = () => {
         </Accordion.Body>
       </Accordion.Item>
     </Accordion>
+		</Accordion>
     </div>
 		</div>
 	)
