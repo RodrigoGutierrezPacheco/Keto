@@ -77,7 +77,7 @@ const Balanceado = () => {
 			<h3>Preguntas Frecuentes</h3>
 			<div className="preguntas">
 			<Accordion defaultActiveKey="0">
-      <Accordion.Item eventKey="0">
+      <Accordion.Item eventKey="1">
         <Accordion.Header>¿Puedo comer dulces?</Accordion.Header>
         <Accordion.Body>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -103,7 +103,7 @@ const Balanceado = () => {
       </Accordion.Item>
     </Accordion>
 		<Accordion defaultActiveKey="0">
-      <Accordion.Item eventKey="0">
+      <Accordion.Item eventKey="1">
         <Accordion.Header>¿Debo dejar de comer?</Accordion.Header>
         <Accordion.Body>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -129,7 +129,7 @@ const Balanceado = () => {
       </Accordion.Item>
     </Accordion>
 		<Accordion defaultActiveKey="0">
-      <Accordion.Item eventKey="0">
+      <Accordion.Item eventKey="1">
         <Accordion.Header>Los alimentos no me gustan</Accordion.Header>
         <Accordion.Body>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
