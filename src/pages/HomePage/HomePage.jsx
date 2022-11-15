@@ -7,12 +7,49 @@ import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
+import Carousel from 'react-bootstrap/Carousel';
 
 function HomePage() {
   return (
     <div className="body">
 			<div>
-			<img className="dieta" src="images/comida.jpg" alt="" />
+			<Carousel>
+      <Carousel.Item interval={5000}>
+        <img
+          className="d-block w-100"
+          src="images/articulo.jpg"
+          alt="First slide"
+        />
+        <Carousel.Caption>
+          <h3>Reto 1</h3>
+          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item interval={5000}>
+        <img
+          className="d-block w-100"
+          src="images/comida.jpg"
+          alt="Second slide"
+        />
+        <Carousel.Caption>
+          <h3>Reto 2</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item  interval={5000}>
+        <img
+          className="d-block w-100"
+          src="images/dieta.jpg"
+          alt="Third slide"
+        />
+        <Carousel.Caption>
+          <h3>Reto 3</h3>
+          <p>
+            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+          </p>
+        </Carousel.Caption>
+      </Carousel.Item>
+    </Carousel>
       <img className="dieta" src="images/dieta1.jpg" alt="" />
 			</div>
 			<div>
