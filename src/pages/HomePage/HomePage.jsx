@@ -8,6 +8,8 @@ import { CardActionArea } from '@mui/material';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Carousel from 'react-bootstrap/Carousel';
+import Alert from 'react-bootstrap/Alert';
+
 
 function HomePage() {
   return (

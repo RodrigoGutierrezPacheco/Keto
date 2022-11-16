@@ -1,12 +1,16 @@
 @media (max-width:1441px){
 
 	.body{
-		margin-top: 3.8rem;
+		margin-top: .2rem;
 	}
 
 	.dieta{
 		width: 99%;
 		height: 18rem;
+	}
+
+	.logonav{
+		width: 20%;
 	}
 
 	.menu{
@@ -165,6 +169,10 @@
 	color: black;
 	font-weight: 700;
 	background-color:rgba(255,255,255, .9);
+}
+
+.navbar{
+	background-color:#8ed3ff;
 }
 
 }

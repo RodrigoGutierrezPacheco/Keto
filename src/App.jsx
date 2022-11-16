@@ -23,6 +23,7 @@ import Rutinas from "./pages/Rutinas/Rutinas";
 import Articulos from "./pages/Articulos/Articulos";
 import Balanceado from "./pages/Retos/Balanceado";
 import Pago from "./pages/Pago/Pago";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
