@@ -12,6 +12,8 @@ import { Image } from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Accordion from 'react-bootstrap/Accordion';
+
 
 
 const reto=[
@@ -99,6 +101,98 @@ const Retos =()=> {
 					</Card>
 			))}
 			</div>
+			<div className='container'>
+				<h3>¿Como funciona la dieta Cetognica?</h3>
+				<p>Una dieta Cetogenica funciona Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit, obcaecati! Voluptas reprehenderit suscipit pariatur aliquid nulla optio, ratione, necessitatibus commodi mollitia porro ab quia voluptates vitae non. Voluptatibus, ipsam ut?</p>
+			</div>
+			<h3>Preguntas Frecuentes</h3>
+			<div className="preguntas">
+			<Accordion>
+      <Accordion.Item eventKey="1" className='preguntas1' style={{backgroundColor: '#a3d8ff', color:'white'}}>
+        <Accordion.Header>¿Puedo comer dulces?</Accordion.Header>
+        <Accordion.Body>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </Accordion.Body>
+      </Accordion.Item >
+			<Accordion/>
+			<Accordion>
+      <Accordion.Item eventKey="1" style={{backgroundColor: '#a3d8ff', color:'white'}}>
+        <Accordion.Header>¿Puedo Tomar?</Accordion.Header>
+        <Accordion.Body>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </Accordion.Body>
+      </Accordion.Item>
+			</Accordion>
+			<Accordion>
+      <Accordion.Item eventKey="1" style={{backgroundColor: '#a3d8ff', color:'white'}}>
+        <Accordion.Header>¿Debo dejar de comer?</Accordion.Header>
+        <Accordion.Body>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </Accordion.Body>
+      </Accordion.Item>
+			</Accordion>
+			<Accordion>
+      <Accordion.Item eventKey="1" style={{backgroundColor: '#a3d8ff', color:'white'}}>
+        <Accordion.Header>Siento que me falta mas comida</Accordion.Header>
+        <Accordion.Body>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </Accordion.Body>
+      </Accordion.Item>
+			</Accordion>
+			<Accordion>
+      <Accordion.Item eventKey="1" style={{backgroundColor: '#a3d8ff', color:'white'}}>
+        <Accordion.Header>Los alimentos no me gustan</Accordion.Header>
+        <Accordion.Body>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </Accordion.Body>
+      </Accordion.Item>
+			</Accordion>
+			<Accordion>
+      <Accordion.Item eventKey="1" style={{backgroundColor: '#a3d8ff', color:'white'}}>
+        <Accordion.Header>Me siento mas debil</Accordion.Header>
+        <Accordion.Body>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </Accordion.Body>
+      </Accordion.Item>
+    </Accordion>
+		</Accordion>
+    </div>
 		</div>
 
   );
