@@ -10,7 +10,7 @@ import { Color } from 'react-bootstrap/esm/types';
 
 function NavBar() {
   return (
-    <Navbar className='navbar'  expand="lg">
+    <Navbar sticky="top" className='navbar'  expand="lg">
       <Container fluid>
         <Navbar.Brand href="/">
 					<div>
