@@ -102,7 +102,7 @@ function HomePage() {
         <CardMedia
           component="img"
           height="140"
-          image="images/comida.jpg"
+          image="images/RetosKeto.png"
           alt="green iguana"
 					
         />
@@ -121,7 +121,7 @@ function HomePage() {
         <CardMedia
           component="img"
           height="140"
-          image="images/comida.jpg"
+          image="images/RetoBalanceado1.png"
           alt="green iguana"
         />
         <CardContent>
@@ -157,7 +157,7 @@ function HomePage() {
         <CardMedia
           component="img"
           height="140"
-          image="images/comida.jpg"
+          image="images/RecetasKeto.png"
           alt="green iguana"
         />
         <CardContent>
@@ -175,7 +175,7 @@ function HomePage() {
         <CardMedia
           component="img"
           height="140"
-          image="images/comida.jpg"
+          image="images/ProductosRecomendados.png"
           alt="green iguana"
         />
         <CardContent>

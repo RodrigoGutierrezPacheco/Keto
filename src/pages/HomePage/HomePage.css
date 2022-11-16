@@ -52,9 +52,21 @@
 .tiendat{
 	display: flex;
 }
+.container{
+	margin-top: 1rem;
+	text-align: start;
+}
 
 .testimonios{
 	width: 99%;
+}
+
+.retoCard{
+ margin-top: 1rem;
+}
+
+.btnRetos{
+	background-color: black;
 }
 
 .testi{
