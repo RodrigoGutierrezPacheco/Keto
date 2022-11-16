@@ -13,10 +13,7 @@ function NavBar() {
     <Navbar sticky="top" className='navbar'  expand="lg">
       <Container fluid>
         <Navbar.Brand href="/">
-					<div>
-						Keto Challenge
-						<img className='logonav' src="images/dieta2.png" alt="" />
-					</div>
+						<img className='logonav' src="images/KetoChallengeLogo.png" alt="" />
 				</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
