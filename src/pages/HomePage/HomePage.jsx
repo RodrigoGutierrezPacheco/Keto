@@ -16,7 +16,7 @@ import Card from 'react-bootstrap/Card';
 
 function HomePage() {
 
-	const reto=[
+	const tienda=[
 		{
 			img:'images/RetosKeto.png',
 			titulo:'Nuestros Retos',
@@ -46,6 +46,31 @@ function HomePage() {
 			link:'retoKeto4'
 		}
 	]
+
+	const articulos=[
+		{
+			img:'images/RetosKeto.png',
+			titulo:'Dulces Keto',
+			precio: '$800',
+			info:'Dulces deliciosos',
+			link:'retoKeto1'
+		},
+		{
+			img:'images/RetoBalanceado.png',
+			titulo:'Botanas Keto',
+			precio: '$800',
+			info:'Reto pensado para llegar a tu objetivo mas rapido, divertido y saludable.',
+			link:'retoKeto2'
+		},
+		{
+			img:'images/RecetasKeto.png',
+			titulo:'Bebidas',
+			precio: '$800',
+			info:'Las bebidas mas ricas',
+			link:'retoKeto3'
+		},
+	]
+	
 	
   return (
     <div className="body">
@@ -132,7 +157,7 @@ function HomePage() {
 			</section>
 				<h2>Tienda en Linea</h2>
 			<article className="tienda">
-			{reto.map((item)=>(
+			{tienda.map((item)=>(
 				    <Card className='retoCard' style={{ width: '90%', height:'20%' }}>
 						<Card.Img variant="top" src={item.img} />
 						<Card.Body>
@@ -172,31 +197,22 @@ function HomePage() {
     </Box>
 			</div>
 			<div className="articuloOne">
-			<article className="articulo">
-				<img src="images/articulo.jpg" alt="" />
-				<h3>Beneficios de la dieta Keto</h3>
-				<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae, excepturi asperiores? Ullam atque blanditiis ut sit minima necessitatibus eaque deserunt quis! Repellat dolorem cupiditate voluptate est quas, mollitia quo ex?</p>
-				<a href="/beneficios">Leer más--></a>
-			</article>
-			<article className="articulo">
-				<img src="images/articulo.jpg" alt="" />
-				<h3>Postres Keto</h3>
-				<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae, excepturi asperiores? Ullam atque blanditiis ut sit minima necessitatibus eaque deserunt quis! Repellat dolorem cupiditate voluptate est quas, mollitia quo ex?</p>
-				<a href="">Leer más--></a>
-			</article>
-			<article className="articulo">
-				<img src="images/articulo.jpg" alt="" />
-				<h3>Dulces Keto</h3>
-				<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae, excepturi asperiores? Ullam atque blanditiis ut sit minima necessitatibus eaque deserunt quis! Repellat dolorem cupiditate voluptate est quas, mollitia quo ex?</p>
-				<a href="">Leer más--></a>
-			</article>
-			<Box sx={{ '& button': { m: 2 } }}>
-      <div> 
-        <Button href="/articulos" variant="contained" className='buttonLeer' color="info">
-          Leer Mas Articulos
-        </Button>
-      </div>
-    </Box>
+				<h3>Articulos</h3>
+				{articulos.map((articulo)=>(
+					      <Card className='articulosCard' style={{width:'99%'}}>
+								<Card.Img variant="top" src={articulo.img} />
+								<Card.Body>
+									<Card.Text>
+										{articulo.titulo}
+										<br />
+										{articulo.info}
+										<br />
+										<a href={articulo.link}>Ver mas</a>
+									</Card.Text>
+								</Card.Body>
+							</Card>
+			))}
+			<Button href="/articulos">Ir a mas Articulos</Button>
 			</div>
 			<img className="ketoImg" src="images/ketoChallenge1.png" alt="" />
     </div>

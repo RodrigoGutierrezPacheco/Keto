@@ -170,6 +170,11 @@
 	width: 99%;
 }
 
+.articulosCard{
+	margin-bottom: 1rem;
+	margin-top: 1rem;
+}
+
 .lista{
 	display: flex;
 	flex-direction: column;
