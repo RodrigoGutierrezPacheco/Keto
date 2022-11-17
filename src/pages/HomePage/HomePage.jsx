@@ -1,17 +1,52 @@
 import "./HomePage.css";
 import * as React from 'react';
-import Card from '@mui/material/Card';
+// import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
 import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
+// import Button from '@mui/material/Button';
 import Carousel from 'react-bootstrap/Carousel';
 import Alert from 'react-bootstrap/Alert';
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
+
 
 
 function HomePage() {
+
+	const reto=[
+		{
+			img:'images/RetosKeto.png',
+			titulo:'Nuestros Retos',
+			precio: '$800',
+			info:'Conoce todos nuestros retos!',
+			link:'retoKeto1'
+		},
+		{
+			img:'images/RetoBalanceado.png',
+			titulo:'Reto Balanceado',
+			precio: '$800',
+			info:'Reto pensado para llegar a tu objetivo mas rapido, divertido y saludable.',
+			link:'retoKeto2'
+		},
+		{
+			img:'images/RecetasKeto.png',
+			titulo:'Recetarios',
+			precio: '$800',
+			info:'Conoce todas nuestras recetas Keto',
+			link:'retoKeto3'
+		},
+		{
+			img:'images/ProductosRecomendados.png',
+			titulo:'Productos Recomendados',
+			precio: '$800',
+			info:'En esta seccion vas a poder encontrar todos los productos que recmoendamos solo para ti',
+			link:'retoKeto4'
+		}
+	]
+	
   return (
     <div className="body">
 			<div>
@@ -97,115 +132,18 @@ function HomePage() {
 			</section>
 				<h2>Tienda en Linea</h2>
 			<article className="tienda">
-				<Card sx={{ maxWidth: '49%',height:'20rem' }} className="one">
-      <CardActionArea href="/retos">
-        <CardMedia
-          component="img"
-          height="140"
-          image="images/RetosKeto.png"
-          alt="green iguana"
-					
-        />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
-            Nuestros Retos
-          </Typography>
-          <Typography variant="body2" color="text.secondary">
-						Nuestros retos Lorem ipsum dolor sit amet, consecte
-          </Typography>
-        </CardContent>
-      </CardActionArea>
-    </Card>
-		<Card sx={{ maxWidth: '49%',height:'20rem' }} className="one">
-      <CardActionArea href="/retos-balanceado">
-        <CardMedia
-          component="img"
-          height="140"
-          image="images/RetoBalanceado1.png"
-          alt="green iguana"
-        />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
-            Reto 21 Balanceado
-          </Typography>
-          <Typography variant="body2" color="text.secondary">
-						El Reto 21 Balanceado Lorem ipsum dolor sit amet 
-          </Typography>
-        </CardContent>
-      </CardActionArea>
-    </Card>
-		{/* <Card sx={{ maxWidth: '49%',height:'20rem' }} className="one">
-      <CardActionArea>
-        <CardMedia
-          component="img"
-          height="140"
-          image="images/comida.jpg"
-          alt="green iguana"
-        />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
-            Consulta en Linea
-          </Typography>
-          <Typography variant="body2" color="text.secondary">
-						Consulta en Linea Lorem ipsum dolor sit amet consectetur 
-          </Typography>
-        </CardContent>
-      </CardActionArea>
-    </Card> */}
-		<Card sx={{ maxWidth: '49%',height:'20rem' }} className="one">
-      <CardActionArea href='/recetas'>
-        <CardMedia
-          component="img"
-          height="140"
-          image="images/RecetasKeto.png"
-          alt="green iguana"
-        />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
-            Recetarios
-          </Typography>
-          <Typography variant="body2" color="text.secondary">
-						Nuestros Recetarios con las mas ricas comidas
-          </Typography>
-        </CardContent>
-      </CardActionArea>
-    </Card>
-		<Card sx={{ maxWidth: '49%',height:'20rem' }} className="one">
-      <CardActionArea>
-        <CardMedia
-          component="img"
-          height="140"
-          image="images/ProductosRecomendados.png"
-          alt="green iguana"
-        />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
-            Productos Recomendados
-          </Typography>
-          <Typography variant="body2" color="text.secondary">
-						En esta seccion te recomendamos los mejores productos disponibles solo para ti.
-          </Typography>
-        </CardContent>
-      </CardActionArea>
-    </Card>
-		{/* <Card sx={{ maxWidth: '49%',height:'20rem' }} className="one">
-      <CardActionArea href="/rutinas">
-        <CardMedia
-          component="img"
-          height="140"
-          image="images/comida.jpg"
-          alt="green iguana"
-        />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
-           Clases en Linea
-          </Typography>
-          <Typography variant="body2" color="text.secondary">
-						Nuestras Clases en linea te ayudan a sobrellevar mejor tu dia
-          </Typography>
-        </CardContent>
-      </CardActionArea>
-    </Card> */}
+			{reto.map((item)=>(
+				    <Card className='retoCard' style={{ width: '90%', height:'20%' }}>
+						<Card.Img variant="top" src={item.img} />
+						<Card.Body>
+							<Card.Title>{item.titulo}</Card.Title>
+							<Card.Text>
+								{item.info}
+							</Card.Text>
+							<Button variant='outline-primary' href={item.link}>¡Conocelo!</Button>
+						</Card.Body>
+					</Card>
+			))}
 			</article>
 			<div className="testi">
 				<h2>Testimonios</h2>

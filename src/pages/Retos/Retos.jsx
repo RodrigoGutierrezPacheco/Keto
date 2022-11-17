@@ -16,6 +16,7 @@ import Accordion from 'react-bootstrap/Accordion';
 
 
 
+
 const reto=[
 	{
 		img:'images/Dieta1.png',
