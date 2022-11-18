@@ -25,7 +25,7 @@ function HomePage() {
 			link:'retoKeto1'
 		},
 		{
-			img:'images/RetoBalanceado.png',
+			img:'images/RetoBalanceado1.png',
 			titulo:'Reto Balanceado',
 			precio: '$800',
 			info:'Reto pensado para llegar a tu objetivo mas rapido, divertido y saludable.',
@@ -56,7 +56,7 @@ function HomePage() {
 			link:'retoKeto1'
 		},
 		{
-			img:'images/RetoBalanceado.png',
+			img:'images/RetoBalanceado1.png',
 			titulo:'Botanas Keto',
 			precio: '$800',
 			info:'Reto pensado para llegar a tu objetivo mas rapido, divertido y saludable.',
