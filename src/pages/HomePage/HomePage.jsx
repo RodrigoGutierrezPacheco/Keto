@@ -52,7 +52,7 @@ function HomePage() {
 			img:'images/RetosKeto.png',
 			titulo:'Dulces Keto',
 			precio: '$800',
-			info:'Dulces deliciosos',
+			info:'Dulces deliciosos.',
 			link:'retoKeto1'
 		},
 		{
