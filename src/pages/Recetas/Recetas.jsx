@@ -1,13 +1,15 @@
 import * as React from 'react';
-import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
 import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
 import Modal from '@mui/material/Modal';
 import { useState } from 'react';
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
+import Accordion from 'react-bootstrap/Accordion';
+
 
 const recetas=[
 	{
@@ -68,49 +70,110 @@ const Recetas =()=> {
 
   return (
 		<div>
-			<h1>Recetas</h1>
+				<img className='recetasImg' src="images/RetoBalanceado1.png" alt="" />
+			  <p>Descubre las mas deliciosas recetas</p>
 			<div className='retos'>
 			{recetas.map((item)=>(
-				    <Card className='reto' key={item.img}  sx={{maxWidth: "45%"}}>
-						<CardActionArea>
-							<CardMedia
-								component="img"
-								height="140"
-								image="images/dieta.jpg"
-								alt="green iguana"
-							/>
-							<CardContent>
-								<Typography gutterBottom variant="h5" component="div">
-									{item.titulo}
-								</Typography>
-								<Typography variant="body2" color="text.secondary">
-									{item.info}
-								</Typography>
-								<Typography variant="h6" color="CaptionText">
-									{item.precio}
-								</Typography>
-								<Button onClick={handleOpen}>Ver Mas</Button>
-<Modal
-  open={open}
-  onClose={handleClose}
-  aria-labelledby="modal-modal-title"
-  aria-describedby="modal-modal-description"
->
-  <Box sx={style}>
-    <Typography id="modal-modal-title" variant="h6" component="h2">
-      Informacion del Reto
-    </Typography>
-    <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-{item.info}
-{item.precio}
-    </Typography>
-  </Box>
-</Modal>
-							</CardContent>
-						</CardActionArea>
-					</Card>
+				   <Card className='retoCard' style={{ width: '90%', height:'20%' }}>
+					 <Card.Img variant="top" src={item.img} />
+					 <Card.Body>
+						 <Card.Title>{item.titulo}</Card.Title>
+						 <Card.Text>
+							 {item.info}
+						 </Card.Text>
+						 <Button variant='outline-primary' href={item.link}>¡Conocelo!</Button>
+					 </Card.Body>
+				 </Card>
 			))}
 			</div>
+			<h3>Preguntas Frecuentes</h3>
+			<div className="preguntas">
+			<Accordion>
+      <Accordion.Item eventKey="1" className='preguntas1' style={{backgroundColor: '#a3d8ff', color:'white'}}>
+        <Accordion.Header>¿Puedo comer dulces?</Accordion.Header>
+        <Accordion.Body>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </Accordion.Body>
+      </Accordion.Item >
+			<Accordion/>
+			<Accordion>
+      <Accordion.Item eventKey="1" style={{backgroundColor: '#a3d8ff', color:'white'}}>
+        <Accordion.Header>¿Puedo Tomar?</Accordion.Header>
+        <Accordion.Body>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </Accordion.Body>
+      </Accordion.Item>
+			</Accordion>
+			<Accordion>
+      <Accordion.Item eventKey="1" style={{backgroundColor: '#a3d8ff', color:'white'}}>
+        <Accordion.Header>¿Debo dejar de comer?</Accordion.Header>
+        <Accordion.Body>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </Accordion.Body>
+      </Accordion.Item>
+			</Accordion>
+			<Accordion>
+      <Accordion.Item eventKey="1" style={{backgroundColor: '#a3d8ff', color:'white'}}>
+        <Accordion.Header>Siento que me falta mas comida</Accordion.Header>
+        <Accordion.Body>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </Accordion.Body>
+      </Accordion.Item>
+			</Accordion>
+			<Accordion>
+      <Accordion.Item eventKey="1" style={{backgroundColor: '#a3d8ff', color:'white'}}>
+        <Accordion.Header>Los alimentos no me gustan</Accordion.Header>
+        <Accordion.Body>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </Accordion.Body>
+      </Accordion.Item>
+			</Accordion>
+			<Accordion>
+      <Accordion.Item eventKey="1" style={{backgroundColor: '#a3d8ff', color:'white'}}>
+        <Accordion.Header>Me siento mas debil</Accordion.Header>
+        <Accordion.Body>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </Accordion.Body>
+      </Accordion.Item>
+    </Accordion>
+		</Accordion>
+		</div>
 		</div>
 
   );
