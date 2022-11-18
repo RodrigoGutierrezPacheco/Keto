@@ -22,28 +22,28 @@ function HomePage() {
 			titulo:'Nuestros Retos',
 			precio: '$800',
 			info:'Conoce todos nuestros retos!',
-			link:'retoKeto1'
+			link:'retos'
 		},
 		{
 			img:'images/RetoBalanceado1.png',
 			titulo:'Reto Balanceado',
 			precio: '$800',
 			info:'Reto pensado para llegar a tu objetivo mas rapido, divertido y saludable.',
-			link:'retoKeto2'
+			link:'reto-balanceado'
 		},
 		{
 			img:'images/RecetasKeto.png',
 			titulo:'Recetarios',
 			precio: '$800',
 			info:'Conoce todas nuestras recetas Keto',
-			link:'retoKeto3'
+			link:'recetarios'
 		},
 		{
 			img:'images/ProductosRecomendados.png',
 			titulo:'Productos Recomendados',
 			precio: '$800',
 			info:'En esta seccion vas a poder encontrar todos los productos que recmoendamos solo para ti',
-			link:'retoKeto4'
+			link:'productos-recomendados'
 		}
 	]
 

@@ -23,6 +23,7 @@ import Rutinas from "./pages/Rutinas/Rutinas";
 import Articulos from "./pages/Articulos/Articulos";
 import Balanceado from "./pages/Retos/Balanceado";
 import Pago from "./pages/Pago/Pago";
+import ProductosRecomendados from "./pages/ProductosRecomendados/ProductosRecomendados";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
@@ -33,17 +34,18 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
 				<Route path="/retos" element={<Retos/>}/>
-				<Route path="/retoKeto1" element={<RetoKeto1/>}/>
-				<Route path="/retoKeto2" element={<RetoKeto2/>}/>
-				<Route path="/retoKeto3" element={<RetoKeto3/>}/>
-				<Route path="/retoKeto4" element={<RetoKeto4/>}/>
-				<Route path="/retoKeto5" element={<RetoKeto5/>}/>
-				<Route path="/retoKeto6" element={<RetoKeto6/>}/>
+				<Route path="/reto-keto1" element={<RetoKeto1/>}/>
+				<Route path="/reto-keto2" element={<RetoKeto2/>}/>
+				<Route path="/reto-keto3" element={<RetoKeto3/>}/>
+				<Route path="/reto-keto4" element={<RetoKeto4/>}/>
+				<Route path="/reto-keto5" element={<RetoKeto5/>}/>
+				<Route path="/reto-keto6" element={<RetoKeto6/>}/>
 				<Route path="/retos/titulo" element={<DetalleReto/>}/>
-				<Route path="/recetas" element={<Recetas/>} />
+				<Route path="/recetarios" element={<Recetas/>} />
 				<Route path="/rutinas" element={<Rutinas/>}/>
 				<Route path="/articulos" element={<Articulos/>}/>
-				<Route path="/retos-balanceado" element={<Balanceado/>}/>
+				<Route path="/reto-balanceado" element={<Balanceado/>}/>
+				<Route path="/productos-recomendados" element={<ProductosRecomendados/>}/>
 				<Route path="/pago" element={<Pago/>}/>
 
         <Route
