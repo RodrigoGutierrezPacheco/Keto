@@ -24,18 +24,8 @@ function NavBar() {
           >
             <Nav.Link href="/">Inicio</Nav.Link>
             <Nav.Link href="/retos">Retos</Nav.Link>
-            <NavDropdown title="Link" id="navbarScrollingDropdown">
-              <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action4">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action5">
-                Something else here
-              </NavDropdown.Item>
-            </NavDropdown>
-            <Nav.Link href="#" disabled>
-              Link
+            <Nav.Link href="/recetarios">
+              Recetarios
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>

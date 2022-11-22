@@ -146,10 +146,10 @@
 }
 
 .retos{
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
-	margin-top: 2rem;
+width: 90%;
+margin-left: 5%;
+display: flex;
+flex-direction: column;
 }
 
 .reto{
@@ -198,6 +198,44 @@
 
 .navbar{
 	background-color:#8ed3ff;
+}
+
+.precioContainer{
+	display: flex;
+}
+
+.ofertaPng{
+	width: 10%;
+}
+
+
+.recetarioContainer{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+.precio{
+	margin-bottom: 0%;
+}
+
+.formRecetario{
+	width: 90%;
+	margin-left: 5%;
+	text-align: start;
+}
+
+.buttonRecetarios{
+	width: 99%;
+}
+
+.nuestrasRecetas{
+	text-align: start;
+}
+
+.buttonAyudaCompras{
+	width: 90%;
 }
 
 }

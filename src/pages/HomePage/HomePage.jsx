@@ -171,17 +171,31 @@ function HomePage() {
 			))}
 			</article>
 			<div className="testi">
-				<h2>Testimonios</h2>
-				<article className="testimonios">
-				<div className="testimonio">
-					<img src="images/testimonio1.jpg" alt="" />
-					<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed, officia? Excepturi, in optio. Dolorum itaque doloremque necessitatibus quibusdam iste, id reiciendis hic ut veritatis ipsam ratione eaque accusantium amet voluptates?</p>
-				</div>
-				<div className="testimonio">
-					<img src="images/testimonio1.jpg" alt="" />
-					<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed, officia? Excepturi, in optio. Dolorum itaque doloremque necessitatibus quibusdam iste, id reiciendis hic ut veritatis ipsam ratione eaque accusantium amet voluptates?</p>
-				</div>
-				</article>
+				<h1>Testimonios</h1>
+			<Card className='articulosCard' style={{width:'90%'}}>
+								<Card.Img variant="top" src='images/testimonio1.jpg' />
+								<Card.Body>
+									<Card.Text>
+										"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus maxime similique dolorum expedita deleniti veritatis distinctio itaque eius provident assumenda ipsa qui mollitia accusamus harum magnam fugit, perferendis rem ut."
+									</Card.Text>
+								</Card.Body>
+							</Card>
+							<Card className='articulosCard' style={{width:'90%'}}>
+								<Card.Img variant="top" src='images/testimonio1.jpg' />
+								<Card.Body>
+									<Card.Text>
+										"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus maxime similique dolorum expedita deleniti veritatis distinctio itaque eius provident assumenda ipsa qui mollitia accusamus harum magnam fugit, perferendis rem ut."
+									</Card.Text>
+								</Card.Body>
+							</Card>
+							<Card className='articulosCard' style={{width:'90%'}}>
+								<Card.Img variant="top" src='images/testimonio1.jpg' />
+								<Card.Body>
+									<Card.Text>
+										"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus maxime similique dolorum expedita deleniti veritatis distinctio itaque eius provident assumenda ipsa qui mollitia accusamus harum magnam fugit, perferendis rem ut."
+									</Card.Text>
+								</Card.Body>
+							</Card>
 			</div>
 			<div className="dietaKeto">
 				<h2>¿Qué es la dieta cetogenica/keto?</h2>

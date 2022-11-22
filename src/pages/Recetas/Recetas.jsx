@@ -14,40 +14,45 @@ import Accordion from 'react-bootstrap/Accordion';
 const recetas=[
 	{
 		img:'images/dieta.jpg',
-		titulo:'Pastel keto',
+		titulo:'Recetario 1',
 		precio: '$75',
 		info:'El mejor de todos1',
+		link:'/recetario1'
 	},
 	{
 		img:'images/dieta1.jpg',
-		titulo:'Postre Keto',
+		titulo:'Recetario 2',
 		precio: '$750',
 		info:'El mejor de todos1',
+		link:'/recetario2'
 	},
 	{
 		img:'images/dieta1.jpg',
-		titulo:'Dulces Keto',
+		titulo:'Recetario 3',
 		precio: '$750',
 		info:'El mejor de todos1',
+		link:'/recetario3'
 	},
 	{
 		img:'images/dieta1.jpg',
-		titulo:'Paletas Keto',
+		titulo:'Recetario 4',
 		precio: '$750',
 		info:'El mejor de todos1',
+		link:'/recetario4'
 	},
 	{
 		img:'images/dieta1.jpg',
-		titulo:'Panes Keto',
+		titulo:'Recetario 5',
 		precio: '$750',
 		info:'El mejor de todos1',
+		link:'/recetario5'
 	},
 	{
 		img:'images/dieta1.jpg',
-		titulo:'Galletas Keto',
+		titulo:'Recetario 6',
 		precio: '$750',
 		info:'El mejor de todos',
-		link:'retoKeto'
+		link:'/recetario6'
 	},
 ]
 
@@ -71,10 +76,10 @@ const Recetas =()=> {
   return (
 		<div>
 				<img className='recetasImg' src="images/RetoBalanceado1.png" alt="" />
-			  <p>Descubre las mas deliciosas recetas</p>
+			  <p>Descubre todos nuestros recetarios</p>
 			<div className='retos'>
 			{recetas.map((item)=>(
-				   <Card className='retoCard' style={{ width: '90%', height:'20%' }}>
+				   <Card className='retoCard'>
 					 <Card.Img variant="top" src={item.img} />
 					 <Card.Body>
 						 <Card.Title>{item.titulo}</Card.Title>

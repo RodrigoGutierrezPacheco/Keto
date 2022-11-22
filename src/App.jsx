@@ -17,6 +17,13 @@ import RetoKeto3 from "./pages/Retos/RetoKeto3";
 import RetoKeto4 from "./pages/Retos/RetoKeto4";
 import RetoKeto5 from "./pages/Retos/RetoKeto5";
 import RetoKeto6 from "./pages/Retos/RetoKeto6";
+import Recetario1 from "./pages/Recetas/Recetario1";
+import Recetario2 from "./pages/Recetas/Recetario2";
+import Recetario3 from "./pages/Recetas/Recetario3";
+import Recetario4 from "./pages/Recetas/Recetario4";
+import Recetario5 from "./pages/Recetas/Recetario5";
+import Recetario6 from "./pages/Recetas/Recetario6";
+
 import DetalleReto from "./pages/DetalleReto/DetalleReto";
 import Recetas from "./pages/Recetas/Recetas";
 import Rutinas from "./pages/Rutinas/Rutinas";
@@ -40,6 +47,12 @@ function App() {
 				<Route path="/reto-keto4" element={<RetoKeto4/>}/>
 				<Route path="/reto-keto5" element={<RetoKeto5/>}/>
 				<Route path="/reto-keto6" element={<RetoKeto6/>}/>
+				<Route path="/recetario1" element={<Recetario1/>}/>
+				<Route path="/recetario2" element={<Recetario2/>}/>
+				<Route path="/recetario3" element={<Recetario3/>}/>
+				<Route path="/recetario4" element={<Recetario4/>}/>
+				<Route path="/recetario5" element={<Recetario5/>}/>
+				<Route path="/recetario6" element={<Recetario6/>}/>
 				<Route path="/retos/titulo" element={<DetalleReto/>}/>
 				<Route path="/recetarios" element={<Recetas/>} />
 				<Route path="/rutinas" element={<Rutinas/>}/>
