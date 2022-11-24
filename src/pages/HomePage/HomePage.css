@@ -231,6 +231,10 @@ flex-direction: column;
 	height: 5rem;
 }
 
+.width{
+	width: 65%;
+}
+
 .imgOff{
 	width: 60%;
 }
