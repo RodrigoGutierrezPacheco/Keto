@@ -16,6 +16,7 @@ h1,h2,h3,h4,h5,p,ul,ol,li,p,Nav.link,a{
 	background-color:#aeecf8;
  }
 
+
  .margin-top{
 	margin-top: 1rem;
  }
@@ -35,6 +36,15 @@ h1,h2,h3,h4,h5,p,ul,ol,li,p,Nav.link,a{
 
 	.logonav{
 		width: 60%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+
+	.flex{
+		display: flex;
+		flex-direction: column;
 	}
 
 	.menu{
@@ -218,6 +228,11 @@ flex-direction: column;
 
 .navbar{
 	background-color:#8ed3ff;
+	height: 5rem;
+}
+
+.imgOff{
+	width: 60%;
 }
 
 .precioContainer{
