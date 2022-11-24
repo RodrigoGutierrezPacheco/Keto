@@ -44,11 +44,17 @@ h1,h2,h3,h4,h5,p,ul,ol,li,p,Nav.link,a{
 
 	.flex{
 		display: flex;
-		flex-direction: column;
+		flex-direction: row;
+		justify-content: space-between;
+		width: 100%;
+		align-items: center;
+		text-align: center;
 	}
 
 	.menu{
 		width: 20%;
+		display: flex;
+		justify-content: flex-end;
 	}
 
 	.queIncluye{
