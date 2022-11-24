@@ -2,7 +2,7 @@
 h1,h2,h3,h4,h5,p {
 	font-family: 'Nerko One', cursive;
 }
-@media (max-width:1441px){
+@media (max-width:2000px){
 
 	*h1,h2,h3,h4,p{
 		color: yellowgreen;
