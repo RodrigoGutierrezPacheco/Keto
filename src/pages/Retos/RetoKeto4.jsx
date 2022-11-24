@@ -19,10 +19,12 @@ const RetoKeto4 = () => {
 		<h1>Reto Keto 4</h1>
 		<img className="retoBalanceado" src="images/Dieta1.png" alt="" />
 		<p className='margin-top margin-bottom'>¡¡Aprovecha nuestro descuento de 50%!!</p>
-		<h4>¿QUÉ ES EL RETO KETO 4?</h4>
-		<p>*El reto balanceado es Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur, esse. Excepturi cupiditate corporis quasi, odio labore nostrum nemo doloribus iure provident quibusdam aspernatur. Quo, dignissimos! Inventore, nostrum! Necessitatibus, sint asperiores.
-		</p>
-		<p>El reto Balanceado incluye seguimiento si es que quieres realizar ayuno intermitente</p>
+		<div className='container'>
+			<h4>¿QUÉ ES EL RETO KETO 4?</h4>
+			<p>*El reto balanceado es Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur, esse. Excepturi cupiditate corporis quasi, odio labore nostrum nemo doloribus iure provident quibusdam aspernatur. Quo, dignissimos! Inventore, nostrum! Necessitatibus, sint asperiores.
+			</p>
+			<p>El reto Balanceado incluye seguimiento si es que quieres realizar ayuno intermitente</p>
+			</div>
 		<section className='margin-top margin-bottom'>
 			<h2>¿Qué incluye?</h2>
 			<div className="queIncluye">

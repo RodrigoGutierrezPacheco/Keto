@@ -22,10 +22,10 @@ function NavBar() {
             style={{ maxHeight: '100px',color:'blue' }}
             navbarScroll
           >
-            <Nav.Link href="/">Inicio</Nav.Link>
-            <Nav.Link href="/retos">Retos</Nav.Link>
+            <Nav.Link href="/"><p>Inicio</p></Nav.Link>
+            <Nav.Link href="/retos"><p>Retos</p></Nav.Link>
             <Nav.Link href="/recetarios">
-              Recetarios
+              <p>Recetarios</p>
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>

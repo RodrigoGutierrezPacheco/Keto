@@ -1,11 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
-h1,h2,h3,h4,h5,p {
+h1,h2,h3,h4,h5,p,ul,ol,li,p,Nav.link,a{
 	font-family: 'Nerko One', cursive;
 }
 @media (max-width:2000px){
 
 	.body{
 		margin-top: .2rem;
+	}
+
+	.padding{
+		padding: 1rem;
 	}
 
  .bgColor{
