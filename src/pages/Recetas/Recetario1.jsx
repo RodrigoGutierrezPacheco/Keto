@@ -4,7 +4,7 @@ import Form from 'react-bootstrap/Form';
 
 const Recetario1 = () => {
 	return (
-		<div >
+		<div className='body'>
 			<h1 className='recetarioContainer'>Recetario 1</h1>
 			<img  className='recetasImg' src="images/RecetasKeto.png" alt="" />
 			<div className='recetarioContainer'>
