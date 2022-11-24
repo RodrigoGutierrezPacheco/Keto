@@ -51,6 +51,10 @@ h1,h2,h3,h4,h5,p,ul,ol,li,p,Nav.link,a{
 		text-align: center;
 	}
 
+	.fontSize{
+		font-size: 1.5rem;
+	}
+
 	.menu{
 		width: 20%;
 		display: flex;

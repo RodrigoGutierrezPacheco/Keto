@@ -27,7 +27,7 @@ function OffcanvasExample() {
                 </Offcanvas.Title>
               </Offcanvas.Header>
               <Offcanvas.Body>
-                <Nav className="justify-content-end flex-grow-1 pe-3">
+                <Nav className="justify-content-end flex-grow-1 pe-3 fontSize">
                   <Nav.Link href="/">Inicio</Nav.Link>
                   <Nav.Link href="/retos">Retos</Nav.Link>
                   <NavDropdown
