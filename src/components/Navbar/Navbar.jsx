@@ -34,11 +34,11 @@ function OffcanvasExample() {
                     title="Recetarios"
                     id={`offcanvasNavbarDropdown-expand-${expand}`}
                   >
-                    <NavDropdown.Item href="/recetario1">Recetario 1</NavDropdown.Item>
-                    <NavDropdown.Item href="/recetario2">
+                    <NavDropdown.Item className='fontSize' href="/recetario1">Recetario 1</NavDropdown.Item>
+                    <NavDropdown.Item className='fontSize' href="/recetario2">
                       Recetario 2
                     </NavDropdown.Item>
-                    <NavDropdown.Item href="/recetario3">
+                    <NavDropdown.Item className='fontSize' href="/recetario3">
                       Recetario 3
                     </NavDropdown.Item>
                   </NavDropdown>
