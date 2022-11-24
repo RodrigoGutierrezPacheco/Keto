@@ -114,11 +114,11 @@ function HomePage() {
     </Carousel>
       <img className="dieta" src="images/dieta1.jpg" alt="" />
 			</div>
-			<div>
+			<div className="margin-top">
 				<h2>¿Qúe es la dieta Keto?</h2>
 				<iframe width="99%" height="300rem" src="https://www.youtube.com/embed/7DRLUUUO10c" title="¿Qué es la dieta keto? Dieta cetogénica para principiantes" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</div>
-			<section>
+			<section className="margin-top">
 				<h2>¿Qué incluye?</h2>
 				<div className="queIncluye">
 					<div className="containerOne">
@@ -155,7 +155,7 @@ function HomePage() {
 					</div>
 				</div>
 			</section>
-				<h2>Tienda en Linea</h2>
+				<h2 className="margin-top">Tienda en Linea</h2>
 			<article className="tienda">
 			{tienda.map((item)=>(
 				    <Card className='retoCard' style={{ width: '90%', height:'20%' }}>
@@ -170,7 +170,7 @@ function HomePage() {
 					</Card>
 			))}
 			</article>
-			<div className="testi">
+			<div className="testi margin-top">
 				<h1>Testimonios</h1>
 			<Card className='articulosCard' style={{width:'90%'}}>
 								<Card.Img variant="top" src='images/testimonio1.jpg' />
@@ -197,7 +197,7 @@ function HomePage() {
 								</Card.Body>
 							</Card>
 			</div>
-			<div className="dietaKeto">
+			<div className="dietaKeto margin-top">
 				<h2>¿Qué es la dieta cetogenica/keto?</h2>
 				<p>*Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores fuga quaerat sapiente commodi quam! Voluptatem eaque enim veritatis quas optio nihil sed, iusto laborum odio voluptas corrupti quod commodi praesentium!</p>
 				<p>*Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores fuga quaerat sapiente commodi quam! Voluptatem eaque enim veritatis quas optio nihil sed, iusto laborum odio voluptas corrupti quod commodi praesentium!</p>
@@ -210,7 +210,7 @@ function HomePage() {
       </div>
     </Box>
 			</div>
-			<div className="articuloOne">
+			<div className="articuloOne margin-top">
 				<h3>Articulos</h3>
 				{articulos.map((articulo)=>(
 					      <Card className='articulosCard' style={{width:'99%'}}>

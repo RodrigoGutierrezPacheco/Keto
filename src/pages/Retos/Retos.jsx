@@ -81,16 +81,16 @@ const Retos =()=> {
 
   return (
 		<div className='body'>
-			<Image src='images/RetosKeto.png' width='99%'>
+			<Image className='margin-bottom' src='images/RetosKeto.png' width='99%'>
 
 			</Image>
-			<div className='container'>
+			<div className='container margin-top margin-bottom'>
 			<h3 className='titulo'>¿Qué es una dieta Keto?</h3>
 			<p>Una dieta Cetogenica Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint id iusto illo minus, ullam veritatis error in sequi repellendus deleniti non voluptatum modi! Dolorem consequuntur at dignissimos veritatis amet assumenda.</p>
 				</div>
 			<div className='retos'>
 			{reto.map((item)=>(
-				    <Card className='retoCard' style={{ width: '90%', height:'20%' }}>
+				    <Card className='retoCard'>
 						<Card.Img variant="top" src={item.img} />
 						<Card.Body>
 							<Card.Title>{item.titulo}</Card.Title>
@@ -102,12 +102,12 @@ const Retos =()=> {
 					</Card>
 			))}
 			</div>
-			<div className='container'>
-				<h3>¿Como funciona la dieta Cetognica?</h3>
+			<div className='container margin-top margin-bottom'>
+				<h3 className='margin-top'>¿Como funciona la dieta Cetognica?</h3>
 				<p>Una dieta Cetogenica funciona Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit, obcaecati! Voluptas reprehenderit suscipit pariatur aliquid nulla optio, ratione, necessitatibus commodi mollitia porro ab quia voluptates vitae non. Voluptatibus, ipsam ut?</p>
 			</div>
-			<h3>Preguntas Frecuentes</h3>
-			<div className="preguntas">
+			<h3 className='margin-top'>Preguntas Frecuentes</h3>
+			<div className="preguntas margin-top">
 			<Accordion>
       <Accordion.Item eventKey="1" className='preguntas1' style={{backgroundColor: '#a3d8ff', color:'white'}}>
         <Accordion.Header>¿Puedo comer dulces?</Accordion.Header>

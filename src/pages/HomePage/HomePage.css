@@ -2,9 +2,20 @@
 
 	.body{
 		margin-top: .2rem;
-		padding: 2%;
 	}
 
+ .bgColor{
+	background-color:#8ed3ff;
+ }
+
+ .margin-top{
+	margin-top: 1rem;
+ }
+ 
+ .margin-bottom{
+ margin-bottom: 1rem;
+ }
+ 
 	.dieta{
 		width: 99%;
 		height: 18rem;
