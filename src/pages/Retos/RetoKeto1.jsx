@@ -60,6 +60,7 @@ const RetoKeto1 = () => {
 					</div>
 				</div>
 			</section>
+			<div className='bgColor'>
 			<h3>Beneficios</h3>
 			<ul className="lista margin-bottom">
 				<li>Beneficio 1</li>
@@ -73,6 +74,7 @@ const RetoKeto1 = () => {
 				<li>Beneficio 9</li>
 				<li>Beneficio 10</li>
 			</ul>
+			</div>
 			<div className='margin-top margin-bottom'>
 			<h3 className='margin-top margin-bottom'>Preguntas Frecuentes</h3>
 			<div className="preguntas">

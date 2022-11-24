@@ -14,6 +14,8 @@ import Card from 'react-bootstrap/Card';
 
 
 
+
+
 function HomePage() {
 
 	const tienda=[
@@ -118,7 +120,7 @@ function HomePage() {
 				<h2>¿Qúe es la dieta Keto?</h2>
 				<iframe width="99%" height="300rem" src="https://www.youtube.com/embed/7DRLUUUO10c" title="¿Qué es la dieta keto? Dieta cetogénica para principiantes" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</div>
-			<section className="margin-top">
+			<section className="margin-top bgColor">
 				<h2>¿Qué incluye?</h2>
 				<div className="queIncluye">
 					<div className="containerOne">
@@ -170,7 +172,7 @@ function HomePage() {
 					</Card>
 			))}
 			</article>
-			<div className="testi margin-top">
+			<div className="testi margin-top bgColor">
 				<h1>Testimonios</h1>
 			<Card className='articulosCard' style={{width:'90%'}}>
 								<Card.Img variant="top" src='images/testimonio1.jpg' />

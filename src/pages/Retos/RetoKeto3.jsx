@@ -60,19 +60,21 @@ const RetoKeto3 = () => {
 				</div>
 			</div>
 		</section>
-		<h3>Beneficios</h3>
-		<ul className="lista margin-bottom">
-			<li>Beneficio 1</li>
-			<li>Beneficio 2</li>
-			<li>Beneficio 3</li>
-			<li>Beneficio 4</li>
-			<li>Beneficio 5</li>
-			<li>Beneficio 6</li>
-			<li>Beneficio 7</li>
-			<li>Beneficio 8</li>
-			<li>Beneficio 9</li>
-			<li>Beneficio 10</li>
-		</ul>
+		<div className='bgColor'>
+			<h3>Beneficios</h3>
+			<ul className="lista margin-bottom">
+				<li>Beneficio 1</li>
+				<li>Beneficio 2</li>
+				<li>Beneficio 3</li>
+				<li>Beneficio 4</li>
+				<li>Beneficio 5</li>
+				<li>Beneficio 6</li>
+				<li>Beneficio 7</li>
+				<li>Beneficio 8</li>
+				<li>Beneficio 9</li>
+				<li>Beneficio 10</li>
+			</ul>
+			</div>
 		<div className='margin-top margin-bottom'>
 		<h3 className='margin-top margin-bottom'>Preguntas Frecuentes</h3>
 		<div className="preguntas">
