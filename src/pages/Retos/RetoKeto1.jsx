@@ -1,9 +1,10 @@
 import React from 'react'
-import Button from '@mui/material/Button';
+import Button from 'react-bootstrap/Button';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import Accordion from 'react-bootstrap/Accordion';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Radio } from '@mui/material';
 
 const RetoKeto1 = () => {
 	const [anchorEl, setAnchorEl] = React.useState(null);
@@ -78,6 +79,7 @@ const RetoKeto1 = () => {
 			</ul>
 			</div>
 			<div className='margin-top margin-bottom'>
+			<Button href='/pago' variant="outline-primary">¡Unete!</Button>
 			<h3 className='margin-top margin-bottom'>Preguntas Frecuentes</h3>
 			<div className="preguntas">
 			<Accordion>

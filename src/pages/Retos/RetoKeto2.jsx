@@ -1,5 +1,5 @@
 import React from 'react'
-import Button from '@mui/material/Button';
+import { Button } from 'react-bootstrap';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import Accordion from 'react-bootstrap/Accordion';
@@ -78,6 +78,7 @@ const RetoKeto2 = () => {
 			</ul>
 			</div>
 		<div className='margin-top margin-bottom'>
+		<Button href='/pago' variant="outline-primary">¡Unete!</Button>
 		<h3 className='margin-top margin-bottom'>Preguntas Frecuentes</h3>
 		<div className="preguntas">
 		<Accordion>

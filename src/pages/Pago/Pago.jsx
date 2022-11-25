@@ -3,7 +3,8 @@ import "./Pago.css"
 import FormGroup from '@mui/material/FormGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Checkbox from '@mui/material/Checkbox';
-import { Button, Radio } from '@mui/material';
+import { Radio } from '@mui/material';
+import { Button } from 'react-bootstrap';
 
 const Pago = () => {
 	const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
@@ -14,7 +15,7 @@ const Pago = () => {
 				<h2>Pago</h2>
 				<form action="">
 					<h3 className='form'>Ingresa tu Nombre</h3>
-					<input className='estatura' type="text" placeholder='Nombre' />
+					<input className='estatura' type="text" placeholder='Nombre' value='nombre' />
 					<h3 className='form'>Apellido</h3>
 					<input className='estatura' type="text" placeholder='Apellido' />
 					<h3 className='form'>Edad</h3>
@@ -38,16 +39,16 @@ const Pago = () => {
 		<h3 className='form'>¿Que reto deseas?</h3>
 					<select className='estatura' name="estatura" id="estatura">
 						<option value="">Reto</option>
-						<option value="1.50-1.70">Reto 1</option>
-						<option value="1.71-1.80">Reto 2</option>
-						<option value="1.81-1.90">Reto 3</option>
+						<option value="reto1">Reto 1</option>
+						<option value="reto2">Reto 2</option>
+						<option value="reto3">Reto 3</option>
 					</select>
 					<h3 className='form'>¿Tienes alguna enfermedad cronica?</h3>
 					<input className='estatura' type="text" placeholder='Si(Cual)/No' />
 					<h3 className='form'>¿Tomas algun medicamento?</h3>
 					<input className='estatura' type="text" placeholder='Si(Cual)/No' />
 				</form>
-				<Button>Proceder al Pago</Button>
+				<Button href='/pago' variant="outline-primary">Pagar</Button>
 			</div>
 		</div>
 	)
