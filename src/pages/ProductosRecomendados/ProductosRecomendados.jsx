@@ -7,8 +7,9 @@ import Box from '@mui/material/Box';
 import Modal from '@mui/material/Modal';
 import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
 import Accordion from 'react-bootstrap/Accordion';
+import Card from 'react-bootstrap/Card';
+import CardGroup from 'react-bootstrap/CardGroup';
 
 
 const productos=[
@@ -71,22 +72,21 @@ const ProductosRecomendados =()=> {
   return (
 		<div>
 				<img className='recetasImg' src="images/RetoBalanceado1.png" alt="" />
-			  <p>Estos son los productos que recomendamos para tu dia a dia</p>
+				<h4>Estos son los productos que recomendamos para tu dia a dia</h4>
 			<div className='retos'>
 			{productos.map((item)=>(
-				   <Card className='retoCard' style={{ width: '90%', height:'20%' }}>
-					 <Card.Img variant="top" src={item.img} />
-					 <Card.Body>
-						 <Card.Title>{item.titulo}</Card.Title>
-						 <Card.Text>
-							 {item.info}
-						 </Card.Text>
-						 <Button variant='outline-primary' href={item.link}>¡Conocelo!</Button>
-					 </Card.Body>
-				 </Card>
+				  <Card className='retoCard'>
+					<Card.Img variant="top" src={item.img} />
+					<Card.Body>
+						<Card.Title>{item.titulo}</Card.Title>
+						<Card.Text>
+							{item.info}
+						</Card.Text>
+					</Card.Body>
+				</Card>
 			))}
 			</div>
-			<h3>Preguntas Frecuentes</h3>
+			<h3 className='margin-top margin-bottom'>Preguntas Frecuentes</h3>
 			<div className="preguntas">
 			<Accordion>
       <Accordion.Item eventKey="1" className='preguntas1' style={{backgroundColor: '#a3d8ff', color:'white'}}>
@@ -174,6 +174,8 @@ const ProductosRecomendados =()=> {
     </Accordion>
 		</Accordion>
 		</div>
+		<img className="ketoImg" src="images/ketoChallenge1.png" alt="" />
+
 		</div>
 
   );
