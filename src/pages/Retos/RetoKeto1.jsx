@@ -79,7 +79,7 @@ const RetoKeto1 = () => {
 			</ul>
 			</div>
 			<div className='margin-top margin-bottom'>
-			<Button href='/pago' variant="outline-primary">¡Unete!</Button>
+			<Button href='/pago-retos' variant="outline-primary">¡Unete!</Button>
 			<h3 className='margin-top margin-bottom'>Preguntas Frecuentes</h3>
 			<div className="preguntas">
 			<Accordion>

@@ -118,7 +118,7 @@ function HomePage() {
 			</div>
 			<div className="margin-top">
 				<h2>¿Qúe es la dieta Keto?</h2>
-				<iframe width="99%" height="300rem" src="https://www.youtube.com/embed/7DRLUUUO10c" title="¿Qué es la dieta keto? Dieta cetogénica para principiantes" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<iframe className="video" src="https://www.youtube.com/embed/7DRLUUUO10c" title="¿Qué es la dieta keto? Dieta cetogénica para principiantes" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</div>
 			<section className="margin-top bgColor">
 				<h2>¿Qué incluye?</h2>
