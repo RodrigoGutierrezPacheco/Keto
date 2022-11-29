@@ -53,7 +53,6 @@ const Recetario6 = () => {
 		</ol>
 		</div>
 		<Button className="buttonAyudaCompras" variant="outline-primary">Ayuda con mi Compra</Button>
-		<img className="ketoImg" src="images/ketoChallenge1.png" alt="" />
 		</div>
 	)
 }

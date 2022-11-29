@@ -9,6 +9,9 @@ import 'mdbreact/dist/css/mdb.css';
 
 const FooterPage = () => {
   return (
+		<div>
+						<img className="ketoImg" src="images/ketoChallenge1.png" alt="" />
+
     <MDBFooter color="blue" className="font-small pt-4 mt-4">
       <MDBContainer fluid className="text-center text-md-left">
         <MDBRow>
@@ -21,19 +24,19 @@ const FooterPage = () => {
           <MDBCol md="6">
             {/* <h5 className="title">Links</h5>
             {/* <ul>
-              <li className="list-unstyled">
-                <a href="#!">Instagram</a>
-              </li>
-              <li className="list-unstyled">
-                <a href="#!">Link 2</a>
-              </li>
-              <li className="list-unstyled">
-                <a href="#!">Link 3</a>
-              </li>
-              <li className="list-unstyled">
-                <a href="#!">Link 4</a>
-              </li>
-            </ul> */} 
+						<li className="list-unstyled">
+						<a href="#!">Instagram</a>
+						</li>
+						<li className="list-unstyled">
+						<a href="#!">Link 2</a>
+						</li>
+						<li className="list-unstyled">
+						<a href="#!">Link 3</a>
+						</li>
+						<li className="list-unstyled">
+						<a href="#!">Link 4</a>
+						</li>
+					</ul> */} 
           </MDBCol>
         </MDBRow>
       </MDBContainer>
@@ -43,6 +46,7 @@ const FooterPage = () => {
         </MDBContainer>
       </div>
     </MDBFooter>
+					</div>
   );
 }
 

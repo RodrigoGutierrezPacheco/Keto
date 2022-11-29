@@ -195,7 +195,6 @@ const Retos =()=> {
 		</Accordion>
     </div>
 		</div>
-
   );
 }
 

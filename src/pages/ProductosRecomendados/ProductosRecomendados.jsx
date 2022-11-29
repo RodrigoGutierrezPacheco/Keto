@@ -73,9 +73,9 @@ const ProductosRecomendados =()=> {
 		<div>
 				<img className='recetasImg' src="images/RetoBalanceado1.png" alt="" />
 				<h4>Estos son los productos que recomendamos para tu dia a dia</h4>
-			<div className='retos'>
+			<div className='wrap'>
 			{productos.map((item)=>(
-				  <Card className='retoCard'>
+				  <Card className='margin-top margin-bottom'>
 					<Card.Img variant="top" src={item.img} />
 					<Card.Body>
 						<Card.Title>{item.titulo}</Card.Title>
@@ -174,8 +174,6 @@ const ProductosRecomendados =()=> {
     </Accordion>
 		</Accordion>
 		</div>
-		<img className="ketoImg" src="images/ketoChallenge1.png" alt="" />
-
 		</div>
 
   );

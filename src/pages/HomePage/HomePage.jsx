@@ -230,7 +230,6 @@ function HomePage() {
 			))}
 			<Button href="/articulos">Ir a mas Articulos</Button>
 			</div>
-			<img className="ketoImg" src="images/ketoChallenge1.png" alt="" />
     </div>
   );
 }

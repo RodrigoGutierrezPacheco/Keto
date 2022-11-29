@@ -168,8 +168,6 @@ const RetoKeto4 = () => {
 	</Accordion>
 	</div>
 	</div>
-	<img className="ketoImg" src="images/ketoChallenge1.png" alt="" />
-
 		</div>
 	)
 }
