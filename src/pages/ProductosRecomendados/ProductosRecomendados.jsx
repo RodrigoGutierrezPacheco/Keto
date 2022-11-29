@@ -71,6 +71,7 @@ const ProductosRecomendados =()=> {
 
   return (
 		<div>
+			<p>Aqui va imagen de productos recomendados</p>
 				<img className='recetasImg' src="images/RetoBalanceado1.png" alt="" />
 				<h4>Estos son los productos que recomendamos para tu dia a dia</h4>
 			<div className='wrap'>

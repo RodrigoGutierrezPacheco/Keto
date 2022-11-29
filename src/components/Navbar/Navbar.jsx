@@ -30,6 +30,7 @@ function OffcanvasExample() {
                 <Nav className="justify-content-end flex-grow-1 pe-3 fontSize">
                   <Nav.Link href="/">Inicio</Nav.Link>
                   <Nav.Link href="/retos">Retos</Nav.Link>
+									<Nav.Link href="/productos-recomendados">Productos Recomendados</Nav.Link>
                   <NavDropdown
                     title="Recetarios"
                     id={`offcanvasNavbarDropdown-expand-${expand}`}
