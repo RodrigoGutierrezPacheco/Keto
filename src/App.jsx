@@ -30,6 +30,7 @@ import Rutinas from "./pages/Rutinas/Rutinas";
 import Articulos from "./pages/Articulos/Articulos";
 import Balanceado from "./pages/Retos/Balanceado";
 import Pago from "./pages/Pago/Pago";
+import PagoRecetario from "./pages/Pago/PagoRecetario";
 import ProductosRecomendados from "./pages/ProductosRecomendados/ProductosRecomendados";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -59,7 +60,8 @@ function App() {
 				<Route path="/articulos" element={<Articulos/>}/>
 				<Route path="/reto-balanceado" element={<Balanceado/>}/>
 				<Route path="/productos-recomendados" element={<ProductosRecomendados/>}/>
-				<Route path="/pago" element={<Pago/>}/>
+				<Route path="/pago-retos" element={<Pago/>}/>
+				<Route path="/pago-recetario" element={<PagoRecetario/>}/>
 
         <Route
           path="/profile"

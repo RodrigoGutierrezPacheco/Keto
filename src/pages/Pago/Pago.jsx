@@ -10,10 +10,11 @@ const Pago = () => {
 	const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
 	return (
 		<div>
+			<p style={{color:'red'}}>Aqui va una imagen referente a promociones en pago de retos</p>
 			<img className='imagen' src="images/ketoChallenge1.png" alt="" />
 			<h1 className='margin-bottom'>Reto Keto Challenge</h1>
 			<div className='formularioPago'>
-				<h2>Pago</h2>
+				<h2>Pago Reto</h2>
 				<form action="" className='margin-bottom'>
 					<h3 className='form margin-top margin-bottom'>Ingresa tu Nombre</h3>
 					<input className='estatura' type="text" placeholder='Nombre'  />
@@ -38,11 +39,14 @@ const Pago = () => {
 			<FormControlLabel value="numeroReto" name='numeroReto' control={<Checkbox/>} label="4to Reto" />
     </FormGroup>
 		<h3 className='form margin-top margin-bottom'>¿Que reto deseas?</h3>
-					<select className='estatura' name="estatura" id="estatura">
-						<option value="">Reto</option>
+					<select  className='estatura' name="estatura" id="estatura">
+						<option value="">Elige un Reto</option>
 						<option value="reto1">Reto 1</option>
 						<option value="reto2">Reto 2</option>
 						<option value="reto3">Reto 3</option>
+						<option value="reto4">Reto 4</option>
+						<option value="reto5">Reto 5</option>
+						<option value="reto6">Reto 6</option>
 					</select>
 					<h3 className='form margin-top margin-bottom'>¿Tienes alguna enfermedad cronica?</h3>
 					<input className='estatura' type="text" placeholder='Si(Cual)/No' />

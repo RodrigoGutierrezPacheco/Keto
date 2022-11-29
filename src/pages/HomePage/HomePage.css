@@ -116,8 +116,7 @@ h1,h2,h3,h4,h5,p,ul,ol,li,p,Nav.link,a{
 .wrap{
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+	flex-wrap: nowrap ;
 	width: 50%;
 	margin-left: 25%;
 }

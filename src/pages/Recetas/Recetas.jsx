@@ -75,6 +75,7 @@ const Recetas =()=> {
 
   return (
 		<div>
+			<p style={{color:'red'}}> Aqui va una imagen referente a la pagina de recetarios</p>
 				<img className='recetasImg' src="images/RetoBalanceado1.png" alt="" />
 			  <p>Descubre todos nuestros recetarios</p>
 			<div className='retos'>

@@ -31,18 +31,7 @@ function OffcanvasExample() {
                   <Nav.Link href="/">Inicio</Nav.Link>
                   <Nav.Link href="/retos">Retos</Nav.Link>
 									<Nav.Link href="/productos-recomendados">Productos Recomendados</Nav.Link>
-                  <NavDropdown
-                    title="Recetarios"
-                    id={`offcanvasNavbarDropdown-expand-${expand}`}
-                  >
-                    <NavDropdown.Item className='fontSize' href="/recetario1">Recetario 1</NavDropdown.Item>
-                    <NavDropdown.Item className='fontSize' href="/recetario2">
-                      Recetario 2
-                    </NavDropdown.Item>
-                    <NavDropdown.Item className='fontSize' href="/recetario3">
-                      Recetario 3
-                    </NavDropdown.Item>
-                  </NavDropdown>
+									<Nav.Link href="/recetarios">Recetarios</Nav.Link>
                 </Nav>
               </Offcanvas.Body>
 							<img className="imgOff" src="images/ketoChallenge1.png" alt="" />
