@@ -33,6 +33,7 @@ import Pago from "./pages/Pago/Pago";
 import PagoRecetario from "./pages/Pago/PagoRecetario";
 import ProductosRecomendados from "./pages/ProductosRecomendados/ProductosRecomendados";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Nosotros from "./pages/Nosotros/Nosotros";
 
 function App() {
   return (
@@ -58,6 +59,7 @@ function App() {
 				<Route path="/recetarios" element={<Recetas/>} />
 				<Route path="/rutinas" element={<Rutinas/>}/>
 				<Route path="/articulos" element={<Articulos/>}/>
+				<Route path="/nosotros" element={<Nosotros/>}/>
 				<Route path="/reto-balanceado" element={<Balanceado/>}/>
 				<Route path="/productos-recomendados" element={<ProductosRecomendados/>}/>
 				<Route path="/pago-retos" element={<Pago/>}/>

@@ -32,6 +32,7 @@ function OffcanvasExample() {
                   <Nav.Link href="/retos">Retos</Nav.Link>
 									<Nav.Link href="/productos-recomendados">Productos Recomendados</Nav.Link>
 									<Nav.Link href="/recetarios">Recetarios</Nav.Link>
+									<Nav.Link href="/nosotros">¿Quienes somos?</Nav.Link>
                 </Nav>
               </Offcanvas.Body>
 							<img className="imgOff" src="images/ketoChallenge1.png" alt="" />
