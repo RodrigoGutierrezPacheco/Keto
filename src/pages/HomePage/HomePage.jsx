@@ -76,8 +76,8 @@ function HomePage() {
 	
   return (
     <div className="body">
-			<div>
-			<Carousel>
+			<div className="boxOne">
+			<Carousel className="carrucel">
       <Carousel.Item interval={5000}>
         <img
           className="d-block w-100"
@@ -115,10 +115,12 @@ function HomePage() {
       </Carousel.Item>
     </Carousel>
       <img className="dieta" src="images/dieta1.jpg" alt="" />
-			</div>
+			<div className="videoO">
 			<div className="margin-top">
-				<h2>¿Qúe es la dieta Keto?</h2>
+				<h2 className="que">¿Qúe es la dieta Keto?</h2>
 				<iframe className="video" src="https://www.youtube.com/embed/7DRLUUUO10c" title="¿Qué es la dieta keto? Dieta cetogénica para principiantes" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+			</div>
 			</div>
 			<section className="margin-top bgColor">
 				<h2>¿Qué incluye?</h2>
