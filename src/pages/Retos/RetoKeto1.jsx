@@ -5,7 +5,9 @@ import MenuItem from '@mui/material/MenuItem';
 import Accordion from 'react-bootstrap/Accordion';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Radio } from '@mui/material';
-
+import { PayPalButtons } from '@paypal/react-paypal-js';
+import { PayPalButtonsComponentProps } from '@paypal/react-paypal-js';
+import { PayPalScriptProvider } from '@paypal/react-paypal-js';
 const RetoKeto1 = () => {
 	const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
@@ -80,6 +82,9 @@ const RetoKeto1 = () => {
 			</div>
 			<div className='margin-top margin-bottom'>
 			<Button href='/pago-retos' variant="outline-primary">¡Unete!</Button>
+			<PayPalScriptProvider>
+				<PayPalButtons/>
+			</PayPalScriptProvider>
 			<h3 className='margin-top margin-bottom'>Preguntas Frecuentes</h3>
 			<div className="preguntas">
 			<Accordion>
