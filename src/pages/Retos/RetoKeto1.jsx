@@ -59,11 +59,11 @@ const RetoKeto1 = () => {
                             return orderId;
                         });
                 }}
-								onApprove={(data,actions) => {
-									return actions.order.capture().then(function (details){
-										console.log("Pago aprobado")
-									})
-								}}
+								// onApprove={(data,actions) => {
+								// 	return actions.order.capture().then(function (details){
+								// 		console.log("Pago aprobado")
+								// 	})
+								// }}
             />
         </>
     );
@@ -158,10 +158,20 @@ const RetoKeto1 = () => {
 							brand_name:"Keto Challenge",
 							// landing_page:"NO_PREFERENCE",
 							// user_action:"PAY_NOW",
-							// return_url:"www.google.com",
-							cancel_url:"http:localhost:3000/",
+							return_url:"https://ketochallenge.vercel.app/pago-aceptado//paypal",
+							cancel_url:"https://ketochallenge.vercel.app/pago-aceptado//paypal",
 						}
 					});
+				}}
+				onApprove={(data,actions) => {
+					return actions.order.capture().then((details)=> {
+						const name = details.payer.name.given_name;
+						const orderId= details.id
+						alert(`Transaccion completada por ${name}, en breve recibirar un correo electronico con la informacion requerida. Toma una captura de pantalla ${orderId}`)
+					})
+				}}
+				onCancel={(data,err) => {
+					alert(`Transaccion cancelada, no se ha realizado ningun cobro.${err}`)
 				}}
 				/>
 			</PayPalScriptProvider>
