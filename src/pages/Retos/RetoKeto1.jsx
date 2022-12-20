@@ -15,7 +15,7 @@ import { redirect } from 'react-router-dom';
 import { Details } from '@mui/icons-material';
 
 const RetoKeto1 = () => {
-	const amount = "89";
+	const amount = ".01";
   const currency = "MXN";
   const style = {"layout":"vertical"};
 
@@ -49,7 +49,7 @@ const RetoKeto1 = () => {
                                 {
                                     amount: {
                                         currency_code: currency,
-                                        value: "89",
+                                        value: amount,
                                     },
                                 },
                             ],
@@ -151,7 +151,7 @@ const RetoKeto1 = () => {
 						purchase_units:[
 							{
 								amount:{
-									value:"89.00"
+									value:amount
 								},
 							},
 						],
