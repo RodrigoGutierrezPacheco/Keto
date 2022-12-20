@@ -34,6 +34,7 @@ import PagoRecetario from "./pages/Pago/PagoRecetario";
 import ProductosRecomendados from "./pages/ProductosRecomendados/ProductosRecomendados";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Nosotros from "./pages/Nosotros/Nosotros";
+import PagoAceptado from "./pages/Pago/PagoAceptado";
 
 function App() {
   return (
@@ -64,6 +65,7 @@ function App() {
 				<Route path="/productos-recomendados" element={<ProductosRecomendados/>}/>
 				<Route path="/pago-retos" element={<Pago/>}/>
 				<Route path="/pago-recetario" element={<PagoRecetario/>}/>
+				<Route path="/pago-aceptado" element={<PagoAceptado/>}/>
 
         <Route
           path="/profile"

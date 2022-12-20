@@ -154,6 +154,13 @@ const RetoKeto1 = () => {
 								},
 							},
 						],
+						application_context: {
+							brand_name:"Keto Challenge",
+							// landing_page:"NO_PREFERENCE",
+							// user_action:"PAY_NOW",
+							// return_url:"www.google.com",
+							cancel_url:"http:localhost:3000/",
+						}
 					});
 				}}
 				/>
