@@ -1,4 +1,6 @@
 import React from 'react'
+import { useEffect } from 'react';
+import { BrowserRouter as Router,Routes,Route } from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
@@ -8,7 +10,66 @@ import { Radio } from '@mui/material';
 import { PayPalButtons } from '@paypal/react-paypal-js';
 import { PayPalButtonsComponentProps } from '@paypal/react-paypal-js';
 import { PayPalScriptProvider } from '@paypal/react-paypal-js';
+import { usePayPalScriptReducer } from '@paypal/react-paypal-js';
+import { redirect } from 'react-router-dom';
+import { Details } from '@mui/icons-material';
+
 const RetoKeto1 = () => {
+	const amount = "89";
+  const currency = "MXN";
+  const style = {"layout":"vertical"};
+
+	const ButtonWrapper = ({ currency, showSpinner }) => {
+    // usePayPalScriptReducer can be use only inside children of PayPalScriptProviders
+    // This is the main reason to wrap the PayPalButtons in a new component
+    const [{ options, isPending }, dispatch] = usePayPalScriptReducer();
+
+    useEffect(() => {
+        dispatch({
+            type: "resetOptions",
+            value: {
+                ...options,
+                currency: currency,
+            },
+        });
+    }, [currency, showSpinner]);
+
+
+    return (<>
+            { (showSpinner && isPending) && <div className="spinner" /> }
+            <PayPalButtons
+                style={style}
+                disabled={false}
+                forceReRender={[amount, currency, style]}
+                fundingSource={undefined}
+                createOrder={(data, actions) => {
+                    return actions.order
+                        .create({
+                            purchase_units: [
+                                {
+                                    amount: {
+                                        currency_code: currency,
+                                        value: "89",
+                                    },
+                                },
+                            ],
+                        })
+                        .then((orderId) => {
+                            // Your code here after create the order
+                            return orderId;
+                        });
+                }}
+								onApprove={(data,actions) => {
+									return actions.order.capture().then(function (details){
+										console.log("Pago aprobado")
+									})
+								}}
+            />
+        </>
+    );
+}
+
+
 	const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
   const handleClick = (event) => {
@@ -17,6 +78,7 @@ const RetoKeto1 = () => {
   const handleClose = () => {
     setAnchorEl(null);
   };
+	console.log(process.env.REACT_APP_PAYPAL_CLIENT_ID)
 	return (
 		<div className="body">
 			<h1>Reto Keto 1</h1>
@@ -81,9 +143,21 @@ const RetoKeto1 = () => {
 			</ul>
 			</div>
 			<div className='margin-top margin-bottom'>
-			<Button href='/pago-retos' variant="outline-primary">¡Unete!</Button>
-			<PayPalScriptProvider>
-				<PayPalButtons/>
+			<Button href='/pago-retos' variant="outline-primary">unete</Button>
+			<PayPalScriptProvider options={{"client-id":process.env.REACT_APP_PAYPAL_CLIENT_ID,components:"buttons", currency:"MXN" }}>
+				<PayPalButtons
+				createOrder={(data,actions) => {
+					return actions.order.create({
+						purchase_units:[
+							{
+								amount:{
+									value:"89.00"
+								},
+							},
+						],
+					});
+				}}
+				/>
 			</PayPalScriptProvider>
 			<h3 className='margin-top margin-bottom'>Preguntas Frecuentes</h3>
 			<div className="preguntas">
