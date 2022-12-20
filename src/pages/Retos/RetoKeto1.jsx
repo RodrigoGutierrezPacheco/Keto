@@ -78,7 +78,6 @@ const RetoKeto1 = () => {
   const handleClose = () => {
     setAnchorEl(null);
   };
-	console.log(process.env.REACT_APP_PAYPAL_CLIENT_ID)
 	return (
 		<div className="body">
 			<h1>Reto Keto 1</h1>
