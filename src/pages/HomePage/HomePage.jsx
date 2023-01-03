@@ -162,7 +162,7 @@ function HomePage() {
 				<h2 className="margin-top">Tienda en Linea</h2>
 			<article className="tienda">
 			{tienda.map((item)=>(
-				    <Card className='retoCard' style={{ width: '90%', height:'20%' }}>
+				    <Card className='retoCard'>
 						<Card.Img variant="top" src={item.img} />
 						<Card.Body>
 							<Card.Title>{item.titulo}</Card.Title>
@@ -174,9 +174,9 @@ function HomePage() {
 					</Card>
 			))}
 			</article>
-			<div className="testi margin-top bgColor">
 				<h1>Testimonios</h1>
-			<Card className='articulosCard' style={{width:'90%'}}>
+			<div className="tienda margin-top bgColor">
+			<Card className='articulosCard'>
 								<Card.Img variant="top" src='images/testimonio1.jpg' />
 								<Card.Body>
 									<Card.Text>
@@ -184,7 +184,7 @@ function HomePage() {
 									</Card.Text>
 								</Card.Body>
 							</Card>
-							<Card className='articulosCard' style={{width:'90%'}}>
+							<Card className='articulosCard'>
 								<Card.Img variant="top" src='images/testimonio1.jpg' />
 								<Card.Body>
 									<Card.Text>
@@ -192,7 +192,7 @@ function HomePage() {
 									</Card.Text>
 								</Card.Body>
 							</Card>
-							<Card className='articulosCard' style={{width:'90%'}}>
+							<Card className='articulosCard'>
 								<Card.Img variant="top" src='images/testimonio1.jpg' />
 								<Card.Body>
 									<Card.Text>
@@ -214,10 +214,10 @@ function HomePage() {
       </div>
     </Box>
 			</div>
-			<div className="articuloOne margin-top">
 				<h3>Articulos</h3>
+			<div className=" margin-top tienda">
 				{articulos.map((articulo)=>(
-					      <Card className='articulosCard' style={{width:'99%'}}>
+					      <Card className='articulosCard'>
 								<Card.Img variant="top" src={articulo.img} />
 								<Card.Body>
 									<Card.Text>
@@ -230,8 +230,8 @@ function HomePage() {
 								</Card.Body>
 							</Card>
 			))}
-			<Button href="/articulos">Ir a mas Articulos</Button>
 			</div>
+			<Button href="/articulos">Ir a mas Articulos</Button>
     </div>
   );
 }

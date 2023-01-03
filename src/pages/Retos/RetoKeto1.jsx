@@ -167,8 +167,6 @@ const RetoKeto1 = () => {
 							description:"Reto 1 que ye ayudará a cumplir todas tus metas",
 							landing_page:"NO_PREFERENCE",
 							user_action:"PAY_NOW",
-							return_url:"https://ketochallenge.vercel.app/pago-cancelado//paypal",
-							cancel_url:"https://ketochallenge.vercel.app/pago-aceptado//paypal",
 						}
 					});
 				}}

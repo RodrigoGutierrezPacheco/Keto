@@ -5,8 +5,8 @@ h1,h2,h3,h4,h5,p,ul,ol,li,p,Nav.link,a{
 @media (max-width:426px){
 
 	.video{
-		width: 99%;
-		height: 30rem;
+		width: 90%;
+		height: 20rem;
 	}
 
 	.body{
@@ -18,7 +18,7 @@ h1,h2,h3,h4,h5,p,ul,ol,li,p,Nav.link,a{
 	}
 
  .bgColor{
-	background-color:#aeecf8;
+	background-color:#8ed3ff;
  }
 
 
@@ -70,7 +70,6 @@ h1,h2,h3,h4,h5,p,ul,ol,li,p,Nav.link,a{
 
 	.menu{
 		width: 20%;
-		display: flex;
 		justify-content: flex-end;
 	}
 
@@ -116,6 +115,11 @@ h1,h2,h3,h4,h5,p,ul,ol,li,p,Nav.link,a{
 
 .retoCard{
  margin-top: 1rem;
+ width: 90%;
+}
+
+.center{
+	margin-left: 5%;
 }
 
 .wrap{
@@ -238,6 +242,7 @@ flex-direction: column;
 .articulosCard{
 	margin-bottom: 1rem;
 	margin-top: 1rem;
+	width: 90%;
 }
 
 .lista{
@@ -326,7 +331,7 @@ flex-direction: column;
 	}
 
  .bgColor{
-	background-color:#aeecf8;
+	background-color:#8ed3ff;
  }
 
 
@@ -378,8 +383,6 @@ flex-direction: column;
 
 	.menu{
 		width: 20%;
-		display: flex;
-		justify-content: flex-end;
 	}
 
 	.queIncluye{
@@ -424,6 +427,8 @@ flex-direction: column;
 
 .retoCard{
  margin-top: 1rem;
+ width: 45%;
+ margin-left: .1%;
 }
 
 .wrap{
@@ -546,6 +551,7 @@ flex-direction: column;
 .articulosCard{
 	margin-bottom: 1rem;
 	margin-top: 1rem;
+	width: 90%;
 }
 
 .lista{
@@ -664,7 +670,7 @@ flex-direction: column;
 	}
 
  .bgColor{
-	background-color:#aeecf8;
+	background-color:#8ed3ff;
  }
 
 
@@ -715,9 +721,7 @@ flex-direction: column;
 	}
 
 	.menu{
-		width: 20%;
-		display: flex;
-		justify-content: flex-end;
+		width: 5%;
 	}
 
 	.queIncluye{
@@ -761,7 +765,9 @@ flex-direction: column;
 }
 
 .retoCard{
- margin-top: 1rem;
+	margin-top: 1rem;
+	width: 45%;
+	margin-left: .1%;
 }
 
 .wrap{
@@ -884,6 +890,8 @@ flex-direction: column;
 .articulosCard{
 	margin-bottom: 1rem;
 	margin-top: 1rem;
+	width: 20%;
+	flex-wrap: wrap;
 }
 
 .lista{
