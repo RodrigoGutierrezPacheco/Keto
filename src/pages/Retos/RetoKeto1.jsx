@@ -157,10 +157,14 @@ const RetoKeto1 = () => {
 								amount:{
 									value:amount
 								},
+								name:"Reto 1",
+								description:"Reto que te ayudara a cumplir todas tus metas del mundo"
 							},
 						],
 						application_context: {
 							brand_name:"Keto Challenge",
+							name:"Reto 1",
+							description:"Reto 1 que ye ayudará a cumplir todas tus metas",
 							landing_page:"NO_PREFERENCE",
 							user_action:"PAY_NOW",
 							return_url:"https://ketochallenge.vercel.app/pago-cancelado//paypal",
