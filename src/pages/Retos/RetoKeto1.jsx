@@ -1,18 +1,23 @@
 import React from 'react'
 import { useEffect } from 'react';
 import { BrowserRouter as Router,Routes,Route } from 'react-router-dom';
+import Swal from 'sweetalert2';
 import Button from 'react-bootstrap/Button';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import Accordion from 'react-bootstrap/Accordion';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Radio } from '@mui/material';
+import { alertClasses, Radio } from '@mui/material';
 import { PayPalButtons } from '@paypal/react-paypal-js';
 import { PayPalButtonsComponentProps } from '@paypal/react-paypal-js';
 import { PayPalScriptProvider } from '@paypal/react-paypal-js';
 import { usePayPalScriptReducer } from '@paypal/react-paypal-js';
 import { redirect } from 'react-router-dom';
 import { Details } from '@mui/icons-material';
+import Modal from 'react-bootstrap/Modal';
+import { ModalHeader } from 'react-bootstrap';
+import Alert from 'react-bootstrap/Alert';
+import PagoAceptado from '../Pago/PagoAceptado';
 
 const RetoKeto1 = () => {
 	const amount = ".01";
@@ -156,9 +161,9 @@ const RetoKeto1 = () => {
 						],
 						application_context: {
 							brand_name:"Keto Challenge",
-							// landing_page:"NO_PREFERENCE",
-							// user_action:"PAY_NOW",
-							return_url:"https://ketochallenge.vercel.app/pago-aceptado//paypal",
+							landing_page:"NO_PREFERENCE",
+							user_action:"PAY_NOW",
+							return_url:"https://ketochallenge.vercel.app/pago-cancelado//paypal",
 							cancel_url:"https://ketochallenge.vercel.app/pago-aceptado//paypal",
 						}
 					});
@@ -166,12 +171,23 @@ const RetoKeto1 = () => {
 				onApprove={(data,actions) => {
 					return actions.order.capture().then((details)=> {
 						const name = details.payer.name.given_name;
-						const orderId= details.id
-						alert(`Transaccion completada por ${name}, en breve recibirar un correo electronico con la informacion requerida. Toma una captura de pantalla ${orderId}`)
+						const orderId= details.id;
+						const email = details.payer.email_address;
+						Swal.fire({
+							icon: 'success',
+							title: 'Pago Completado!',
+							text: 'En breve recibiras un correo con la informacion solicitada',
+							confirmButtonColor: '#3085d6',
+						})
 					})
 				}}
-				onCancel={(data,err) => {
-					alert(`Transaccion cancelada, no se ha realizado ningun cobro.${err}`)
+				onCancel={() => {
+					Swal.fire({
+						icon: 'error',
+						title: 'Pago Cancelado',
+						text: 'Se ha cancelado la solicitud con exito',
+						confirmButtonColor: '#3085d6',
+					})
 				}}
 				/>
 			</PayPalScriptProvider>

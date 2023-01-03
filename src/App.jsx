@@ -35,6 +35,7 @@ import ProductosRecomendados from "./pages/ProductosRecomendados/ProductosRecome
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Nosotros from "./pages/Nosotros/Nosotros";
 import PagoAceptado from "./pages/Pago/PagoAceptado";
+import PagoCancelado from "./pages/Pago/PagoCancelado";
 
 function App() {
   return (
@@ -65,8 +66,8 @@ function App() {
 				<Route path="/productos-recomendados" element={<ProductosRecomendados/>}/>
 				<Route path="/pago-retos" element={<Pago/>}/>
 				<Route path="/pago-recetario" element={<PagoRecetario/>}/>
-				<Route path="/pago-aceptado" element={<PagoAceptado/>}/>
-
+				<Route path="/pago-aceptado//paypal" element={<PagoAceptado/>}/>
+				<Route path="/pago-cancelado//paypal" element={<PagoCancelado/>}/>
         <Route
           path="/profile"
           element={
