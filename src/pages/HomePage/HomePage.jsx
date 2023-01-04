@@ -273,7 +273,7 @@ function HomePage() {
       </Form.Group>
       <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
         <Form.Label>Correo Electronico</Form.Label>
-        <Form.Control required as="textarea" rows={3} type="email" name="user_email" placeholder="Ingresa tu email" />
+        <Form.Control required  rows={3} type="email" name="user_email" placeholder="Ingresa tu email" />
       </Form.Group>
 			<Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
         <Form.Label>Mensaje</Form.Label>
