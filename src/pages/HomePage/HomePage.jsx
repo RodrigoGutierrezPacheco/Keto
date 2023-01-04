@@ -87,8 +87,8 @@ function HomePage() {
 			.then((result) => {
 				Swal.fire({
 					icon: 'success',
-					title: 'Pago Completado!',
-					text: 'En breve recibiras un correo con la informacion solicitada y otro correo con la informacion de pago de paypal',
+					title: '¡Correo Enviado!',
+					text: 'En breve nos pondremos en contacto contigo',
 					confirmButtonColor: '#3085d6',
 				})
 				setTimeout(function(){
