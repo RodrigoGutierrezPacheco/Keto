@@ -83,7 +83,7 @@ function HomePage() {
 	const sendEmail = (e) => {
 		e.preventDefault();
 
-		emailjs.sendForm(process.env.REACT_APP_EMAILJS_SERVICEID, process.env.REACT_APP_EMAILJS_TEMPLATE, form.current, process.env.REACT_APP_EMAILJS_PUBLICID)
+		emailjs.sendForm(process.env.REACT_APP_EMAILJS_SERVICEID, process.env.REACT_APP_EMAILJS_TEMPLATE, form.current, process.env.REACT_APP_EMAILJS_PUBLICKEY)
 			.then((result) => {
 				Swal.fire({
 					icon: 'success',
