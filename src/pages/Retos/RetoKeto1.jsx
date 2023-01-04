@@ -18,8 +18,16 @@ import Modal from 'react-bootstrap/Modal';
 import { ModalHeader } from 'react-bootstrap';
 import Alert from 'react-bootstrap/Alert';
 import PagoAceptado from '../Pago/PagoAceptado';
+import emailjs from '@emailjs/browser';
+
 
 const RetoKeto1 = () => {
+
+	var templateParams = {
+    name: 'James',
+    notes: 'Check this out!'
+};
+
 	const amount = ".01";
   const currency = "MXN";
   const style = {"layout":"vertical"};
@@ -181,6 +189,14 @@ const RetoKeto1 = () => {
 							text: 'En breve recibiras un correo con la informacion solicitada y otro correo con la informacion de pago de paypal',
 							confirmButtonColor: '#3085d6',
 						})
+
+						emailjs.send(process.env.REACT_APP_EMAILJS_SERVICEID, process.env.REACT_APP_EMAILJS_TEMPLATE, templateParams)
+    .then(function(response) {
+       console.log('SUCCESS!', response.status, response.text);
+    }, function(error) {
+       console.log('FAILED...', error);
+    });
+						
 					})
 				}}
 				onCancel={() => {
