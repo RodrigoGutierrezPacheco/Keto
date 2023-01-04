@@ -11,8 +11,14 @@ import Carousel from 'react-bootstrap/Carousel';
 import Alert from 'react-bootstrap/Alert';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-
-
+import emailjs from '@emailjs/browser';
+import styled from "styled-components";
+import { useRef } from 'react';
+import Swal from "sweetalert2";
+import Col from 'react-bootstrap/Col';
+import Form from 'react-bootstrap/Form';
+import InputGroup from 'react-bootstrap/InputGroup';
+import Row from 'react-bootstrap/Row';
 
 
 
@@ -73,6 +79,25 @@ function HomePage() {
 		},
 	]
 	
+	const form = useRef();
+	const sendEmail = (e) => {
+		e.preventDefault();
+
+		emailjs.sendForm(process.env.REACT_APP_EMAILJS_SERVICEID, process.env.REACT_APP_EMAILJS_TEMPLATE, form.current, process.env.REACT_APP_EMAILJS_PUBLICID)
+			.then((result) => {
+				Swal.fire({
+					icon: 'success',
+					title: 'Pago Completado!',
+					text: 'En breve recibiras un correo con la informacion solicitada y otro correo con la informacion de pago de paypal',
+					confirmButtonColor: '#3085d6',
+				})
+				setTimeout(function(){
+					window.location.reload();
+			 }, 5000);
+			}, (error) => {
+					console.log(error.text);
+			});
+	};
 	
   return (
     <div className="body">
@@ -232,6 +257,33 @@ function HomePage() {
 			))}
 			</div>
 			<Button href="/articulos">Ir a mas Articulos</Button>
+			{/* <form ref={form} onSubmit={sendEmail}>
+		<label>Name</label>
+		<input type="text" name="user_name" />
+		<label>Email</label>
+		<input type="email" name="user_email" />
+		<label>Message</label>
+		<textarea name="message" />
+		<input type="submit" value="Send" />
+	</form> */}
+	<Form ref={form} onSubmit={sendEmail}>
+      <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+        <Form.Label>Nombre</Form.Label>
+        <Form.Control required type="text" name="user_name" placeholder="Ingresa tu Nombre completo" />
+      </Form.Group>
+      <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
+        <Form.Label>Correo Electronico</Form.Label>
+        <Form.Control required as="textarea" rows={3} type="email" name="user_email" placeholder="Ingresa tu email" />
+      </Form.Group>
+			<Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
+        <Form.Label>Mensaje</Form.Label>
+        <Form.Control required name="message" as="textarea" rows={3} placeholder="Ingresa cualquier duda que tengas, trataremos de resolverla lo mas pronto posible" />
+      </Form.Group>
+			<Button type="submit" value="Send">Enviar</Button>
+    </Form>
+		
+
+
     </div>
   );
 }
