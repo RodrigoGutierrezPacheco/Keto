@@ -186,7 +186,7 @@ const RetoKeto1 = () => {
 						Swal.fire({
 							icon: 'success',
 							title: 'Pago Completado!',
-							text: `En breve recibiras un correo a ${email} con la informacion solicitada y otro correo con la informacion de pago de paypal`,
+							text: `Gracias por tu pago ${name}, en breve recibiras un correo a ${email} con la informacion solicitada y otro correo con la informacion de pago de paypal`,
 							confirmButtonColor: '#3085d6',
 						})
 						emailjs.send("service_n648gkj","template_0wzy1rm",{
