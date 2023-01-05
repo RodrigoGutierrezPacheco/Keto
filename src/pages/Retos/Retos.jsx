@@ -102,7 +102,7 @@ const Retos =()=> {
 					</Card>
 			))}
 			</div>
-			<div className='container margin-top margin-bottom bgColor'>
+			<div className='container margin-top margin-bottom'>
 				<h3 className='margin-top'>¿Como funciona la dieta Cetognica?</h3>
 				<p>Una dieta Cetogenica funciona Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit, obcaecati! Voluptas reprehenderit suscipit pariatur aliquid nulla optio, ratione, necessitatibus commodi mollitia porro ab quia voluptates vitae non. Voluptatibus, ipsam ut?</p>
 			</div>

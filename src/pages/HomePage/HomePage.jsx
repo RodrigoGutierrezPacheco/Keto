@@ -147,7 +147,7 @@ function HomePage() {
 			</div>
 			</div>
 			</div>
-			<section className="margin-top bgColor">
+			<section className="margin-top ">
 				<h2>¿Qué incluye?</h2>
 				<div className="queIncluye">
 					<div className="containerOne">
@@ -200,7 +200,7 @@ function HomePage() {
 			))}
 			</article>
 				<h1>Testimonios</h1>
-			<div className="tienda margin-top bgColor">
+			<div className="tienda margin-top">
 			<Card className='articulosCard'>
 								<Card.Img variant="top" src='images/testimonio1.jpg' />
 								<Card.Body>
@@ -233,9 +233,7 @@ function HomePage() {
 				<img src="images/dieta2.png" alt="" />
 				<Box sx={{ '& button': { m: 2 } }}>
       <div className="button"> 
-        <Button href="/retos" color="success" variant="contained" size="medium">
-          Entra al Reto!
-        </Button>
+			<Button href="/retos" variant="primary">¡Entra al Reto!</Button>{' '}
       </div>
     </Box>
 			</div>
