@@ -4,6 +4,11 @@ h1,h2,h3,h4,h5,p,ul,ol,li,p,Nav.link,a{
 }
 @media (max-width:426px){
 
+	.retoCard1{
+		width: 90%;
+		margin-bottom: 5%;
+	}
+
 	.imgRetosKeto{
 		width: 99%;
 	}
@@ -323,6 +328,18 @@ align-items: center;
 
 @media (min-width:426px) and (max-width:1025px){
 
+	.retoCard1{
+		width: 40%;
+		margin-bottom: 5%;
+		display: flex;
+		justify-content: end;
+		align-items: center;
+	}
+
+	.retoCard1{
+		display: flex;
+	}
+
 	.imgRetosKeto{
 		width: 60%;
 	}
@@ -634,6 +651,14 @@ margin-left: 7.2%;
 
 }
 @media (min-width:1025px) and (max-width:1537px){
+
+	.retoCard1{
+		width: 20%;
+		margin-bottom: 5%;
+		display: flex;
+		justify-content: end;
+		align-items: center;
+	}
 
 	.imgRetosKeto{
 		width: 50%;

@@ -187,7 +187,7 @@ function HomePage() {
 				<h2 className="margin-top">Tienda en Linea</h2>
 			<article className="tienda">
 			{tienda.map((item)=>(
-				    <Card className='retoCard'>
+				    <Card className='retoCard1'>
 						<Card.Img variant="top" src={item.img} />
 						<Card.Body>
 							<Card.Title>{item.titulo}</Card.Title>
