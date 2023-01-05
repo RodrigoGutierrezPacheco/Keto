@@ -81,7 +81,7 @@ const Retos =()=> {
 
   return (
 		<div className='body'>
-			<Image className='margin-bottom  ' src='images/RetosKeto.png' width='99%'>
+			<Image className='margin-bottom  ' src='images/RetosKeto.png' className="imgRetosKeto">
 
 			</Image>
 			<div className='container margin-top margin-bottom'>
