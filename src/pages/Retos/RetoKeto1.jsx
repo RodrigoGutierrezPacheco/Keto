@@ -190,7 +190,7 @@ const RetoKeto1 = () => {
 							confirmButtonColor: '#3085d6',
 						})
 						emailjs.send("service_n648gkj","template_0wzy1rm",{
-							user_name: "username",
+							user_name: {name},
 							to:{email},
 							from:"ketochallengecuerna@gmail.com",
 							user_email: "rodrigogutierrezpacheco@gmail.com",
