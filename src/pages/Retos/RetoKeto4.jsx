@@ -187,9 +187,7 @@ const RetoKeto4 = () => {
 						})
 						emailjs.send("service_brau6bc","template_wqg3w3i",{
 							user_name: {name},
-							to:{email},
 							from:"ketochallengecuerna@gmail.com",
-							user_email: "rodrigogutierrezpacheco@gmail.com",
 							message: "confirmacion de compra",
 							},process.env.REACT_APP_EMAILJS_PUBLICKEY1);
 						
